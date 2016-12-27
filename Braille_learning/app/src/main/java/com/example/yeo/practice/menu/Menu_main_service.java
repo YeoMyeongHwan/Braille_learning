@@ -7,7 +7,9 @@ import android.os.IBinder;
 
 import com.example.yeo.practice.R;
 
-
+/*
+대메뉴 화면 음성 출력 서비스
+ */
 public class Menu_main_service extends Service {
     private static final String TAG = "Menu_service";
     MediaPlayer basic,master,quiz, tutorial, explain_tutorial, explain_basic, explain_master, explain_quiz;
@@ -24,11 +26,12 @@ public class Menu_main_service extends Service {
     @Override
     public void onCreate(){
         super.onCreate();
-        tutorial = MediaPlayer.create(this, R.raw.directions);
-        basic = MediaPlayer.create(this, R.raw.basic);
-        master = MediaPlayer.create(this, R.raw.master);
-        quiz =MediaPlayer.create(this, R.raw.quiz);
+        tutorial = MediaPlayer.create(this, R.raw.directions); //사용설명서
+        basic = MediaPlayer.create(this, R.raw.basic); //기초과정
+        master = MediaPlayer.create(this, R.raw.master); //숙련과정
+        quiz =MediaPlayer.create(this, R.raw.quiz); // 퀴즈
 
+        //반복제거
         basic.setLooping(false);
         master.setLooping(false);
         quiz.setLooping(false);
@@ -38,7 +41,7 @@ public class Menu_main_service extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startID){
         switch(menu_page){
-            case 1:
+            case 1: //사용설명서
                 if(quiz.isPlaying()){
                     quiz.reset();
                     quiz=MediaPlayer.create(this,R.raw.quiz);
@@ -49,7 +52,7 @@ public class Menu_main_service extends Service {
                 }
                 tutorial.start();
                 break;
-            case 2:
+            case 2: //기초과정
                 if(tutorial.isPlaying()){
                     tutorial.reset();
                     tutorial=MediaPlayer.create(this,R.raw.directions);
@@ -60,7 +63,7 @@ public class Menu_main_service extends Service {
                 }
                 basic.start();
                 break;
-            case 3:
+            case 3: //숙련과정
                 if(basic.isPlaying()){
                     basic.reset();
                     basic=MediaPlayer.create(this,R.raw.basic);
@@ -71,7 +74,7 @@ public class Menu_main_service extends Service {
                 }
                 master.start();
                 break;
-            case 4:
+            case 4: //퀴즈
                 if(master.isPlaying()){
                     master.reset();
                     master=MediaPlayer.create(this,R.raw.master);

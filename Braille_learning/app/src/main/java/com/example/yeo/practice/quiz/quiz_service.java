@@ -7,6 +7,9 @@ import android.os.IBinder;
 
 import com.example.yeo.practice.R;
 
+/*
+퀴즈가 진행될때 출력되는 음성을 관리하는 서비스
+ */
 
 public class quiz_service extends Service {
     private static final String TAG = "Number";
@@ -24,23 +27,24 @@ public class quiz_service extends Service {
 
     @Override
     public void onCreate(){
-        quizmanual= MediaPlayer.create(this, R.raw.quiz_manual);
-        first= MediaPlayer.create(this, R.raw.first_quiz);
-        second= MediaPlayer.create(this, R.raw.second_quiz);
-        third= MediaPlayer.create(this, R.raw.third_quiz);
-        forth= MediaPlayer.create(this, R.raw.forth_quiz);
-        last= MediaPlayer.create(this, R.raw.last_quiz);
-        quiz_finish = MediaPlayer.create(this, R.raw.quiz_finish);
-        initial_quiz_finish = MediaPlayer.create(this, R.raw.initial_quiz_finish);
-        vowel_quiz_finish = MediaPlayer.create(this, R.raw.vowel_quiz_finish );
-        final_quiz_finish = MediaPlayer.create(this, R.raw.final_quiz_finish);
-        num_quiz_finish  = MediaPlayer.create(this, R.raw.num_quiz_finish );
-        alphabet_quiz_finish  = MediaPlayer.create(this, R.raw.alphabet_quiz_finish );
-        sentence_quiz_finish  = MediaPlayer.create(this, R.raw.sentence_quiz_finish );
-        abbreviation_quiz_finish  = MediaPlayer.create(this, R.raw.abbreviation_quiz_finish );
-        word_quiz_finish  = MediaPlayer.create(this, R.raw.word_quiz_finish );
-        letter_quiz_finish = MediaPlayer.create(this, R.raw.letter_quiz_finish);
+        quizmanual= MediaPlayer.create(this, R.raw.quiz_manual); //퀴즈 메뉴얼
+        first= MediaPlayer.create(this, R.raw.first_quiz); //첫번째 문제
+        second= MediaPlayer.create(this, R.raw.second_quiz); //두번째 문제
+        third= MediaPlayer.create(this, R.raw.third_quiz); //세번째 문제
+        forth= MediaPlayer.create(this, R.raw.forth_quiz); //네번째 문제
+        last= MediaPlayer.create(this, R.raw.last_quiz); //마지막 문제
+        quiz_finish = MediaPlayer.create(this, R.raw.quiz_finish); //퀴즈 종료
+        initial_quiz_finish = MediaPlayer.create(this, R.raw.initial_quiz_finish); //초성퀴즈 종료
+        vowel_quiz_finish = MediaPlayer.create(this, R.raw.vowel_quiz_finish ); //모음퀴즈 종료
+        final_quiz_finish = MediaPlayer.create(this, R.raw.final_quiz_finish); //종성 퀴즈 종료
+        num_quiz_finish  = MediaPlayer.create(this, R.raw.num_quiz_finish ); //숫자 퀴즈 종료
+        alphabet_quiz_finish  = MediaPlayer.create(this, R.raw.alphabet_quiz_finish ); //알파벳 퀴즈 종료
+        sentence_quiz_finish  = MediaPlayer.create(this, R.raw.sentence_quiz_finish ); //문장부호 퀴즈 종료
+        abbreviation_quiz_finish  = MediaPlayer.create(this, R.raw.abbreviation_quiz_finish ); //약자 및 약어 퀴즈 종료
+        word_quiz_finish  = MediaPlayer.create(this, R.raw.word_quiz_finish ); //단어 퀴즈 종료
+        letter_quiz_finish = MediaPlayer.create(this, R.raw.letter_quiz_finish); //글자 퀴즈 종료
 
+        //반복제거
         initial_quiz_finish .setLooping(false);
         vowel_quiz_finish .setLooping(false);
         final_quiz_finish.setLooping(false);
@@ -63,38 +67,38 @@ public class quiz_service extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startID){
         switch(question){
-            case 0:
+            case 0: //퀴즈메뉴얼
                 quizmanual.start();
                 break;
-            case 1:
+            case 1: //첫번째 문제
                 if(quizmanual.isPlaying()){
                     quizmanual.reset();
                     quizmanual=MediaPlayer.create(this,R.raw.quiz_manual);
                 }
                 first.start();
                 break;
-            case 2:
+            case 2: //두번째 문제
                 if(first.isPlaying()){
                     first.reset();
                     first=MediaPlayer.create(this,R.raw.first_quiz);
                 }
                 second.start();
                 break;
-            case 3:
+            case 3: //세번째 문제
                 if(second.isPlaying()){
                     second.reset();
                     second=MediaPlayer.create(this,R.raw.second_quiz);
                 }
                 third.start();
                 break;
-            case 4:
+            case 4: //네번째 문제
                 if(third.isPlaying()){
                     third.reset();
                     third=MediaPlayer.create(this,R.raw.third_quiz);
                 }
                 forth.start();
                 break;
-            case 5:
+            case 5: //마지막 문제
                 if(forth.isPlaying()){
                     forth.reset();
                     forth=MediaPlayer.create(this,R.raw.forth_quiz);
@@ -102,7 +106,7 @@ public class quiz_service extends Service {
                 last.start();
                 question = 0;
                 break;
-            case 6:
+            case 6: //퀴즈종료 후 점수 출력
                 if(quizmanual.isPlaying()){
                     quizmanual.reset();
                     quizmanual=MediaPlayer.create(this,R.raw.quiz_manual);
@@ -137,7 +141,7 @@ public class quiz_service extends Service {
                     }
                 }
                 break;
-            case 7:
+            case 7: //퀴즈 종료
                 quiz_finish.start();
                 question = 0;
                 break;

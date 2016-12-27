@@ -9,12 +9,15 @@ import android.provider.MediaStore;
 import com.example.yeo.practice.R;
 import com.example.yeo.practice.WHclass;
 
-
+/*
+점자 학습 기능을 위해 출력되는 음성 및 효과음을 관리하는 서비스
+ */
 public class Number extends Service {
     private static final String TAG = "Number";
-    MediaPlayer mnumber1,mnumber2,mnumber3,mnumber4,mnumber5,mnumber6;
-    MediaPlayer wnumber1,wnumber2,wnumber3,wnumber4,wnumber5,wnumber6;
-    MediaPlayer alarm,alarm2;
+    MediaPlayer mnumber1,mnumber2,mnumber3,mnumber4,mnumber5,mnumber6; //남성의 음성으로 1~6
+    MediaPlayer wnumber1,wnumber2,wnumber3,wnumber4,wnumber5,wnumber6; //여성의 음성으로 1~6
+
+    MediaPlayer alarm,alarm2; //구분선의 효과음과 이탈방지의 경고음
 
     public Number() {
     }
@@ -26,6 +29,7 @@ public class Number extends Service {
 
     @Override
     public void onCreate(){
+        //남성의 음성으로 1~6
         mnumber1= MediaPlayer.create(this, R.raw.men_1);
         mnumber2= MediaPlayer.create(this, R.raw.men_2);
         mnumber3= MediaPlayer.create(this, R.raw.men_3);
@@ -33,6 +37,7 @@ public class Number extends Service {
         mnumber5= MediaPlayer.create(this, R.raw.men_5);
         mnumber6= MediaPlayer.create(this, R.raw.men_6);
 
+        //여성의 음성으로 1~6
         wnumber1= MediaPlayer.create(this, R.raw.women_1);
         wnumber2= MediaPlayer.create(this, R.raw.women_2);
         wnumber3= MediaPlayer.create(this, R.raw.women_3);
@@ -40,8 +45,11 @@ public class Number extends Service {
         wnumber5= MediaPlayer.create(this, R.raw.women_5);
         wnumber6= MediaPlayer.create(this, R.raw.women_6);
 
+        //구분선의 효과음과 이탈방지의 경고음
         alarm = MediaPlayer.create(this, R.raw.alarm);
         alarm2 = MediaPlayer.create(this, R.raw.alarm2);
+
+        //반복제거
         mnumber1.setLooping(false);
         mnumber2.setLooping(false);
         mnumber3.setLooping(false);

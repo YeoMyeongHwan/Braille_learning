@@ -21,6 +21,10 @@ import com.example.yeo.practice.menu.Menu_quiz_vowel;
 import com.example.yeo.practice.menu.Menu_quiz_word;
 import com.example.yeo.practice.menu.quiz_menu_service;
 
+
+/*
+퀴즈 점수를 출력해주는 클래스
+ */
 public class quiz_score extends AppCompatActivity {
     public static int score;
     public static int sel;

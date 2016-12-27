@@ -10,6 +10,7 @@ import com.example.yeo.practice.R;
 
 import java.util.Locale;
 
+//숙련과정 메뉴 음성 출력 서비스
 
 public class Menu_master_service extends Service {
     private static final String TAG = "Menu_service";
@@ -27,8 +28,9 @@ public class Menu_master_service extends Service {
     @Override
     public void onCreate(){
         super.onCreate();
-        letter = MediaPlayer.create(this, R.raw.letter);
-        word = MediaPlayer.create(this, R.raw.word);
+        letter = MediaPlayer.create(this, R.raw.letter); //글자연습
+        word = MediaPlayer.create(this, R.raw.word); //단어연습
+        //반복제거
         letter.setLooping(false);
         word.setLooping(false);
     }
@@ -36,14 +38,14 @@ public class Menu_master_service extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startID){
         switch(menu_page){
-            case 1:
+            case 1: //글자연습
                 if(word.isPlaying()){
                     word.reset();
                     word=MediaPlayer.create(this,R.raw.word);
                 }
                 letter.start();
                 break;
-            case 2:
+            case 2: //단어연습
                 if(letter.isPlaying()){
                     letter.reset();
                     letter=MediaPlayer.create(this,R.raw.letter);

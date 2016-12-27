@@ -7,6 +7,7 @@ import android.os.IBinder;
 
 import com.example.yeo.practice.R;
 
+// 메뉴에 대한 음성을 출력하는 서비스
 
 public class Menu_service extends Service {
     private static final String TAG = "Menu_service";
@@ -24,15 +25,17 @@ public class Menu_service extends Service {
     @Override
     public void onCreate(){
         super.onCreate();
-        Sentence = MediaPlayer.create(this, R.raw.start_sentence);
-        Init = MediaPlayer.create(this, R.raw.initial);
-        Final =MediaPlayer.create(this, R.raw.finalconsonant);
-        Vowel = MediaPlayer.create(this, R.raw.vowel);
-        tutorial = MediaPlayer.create(this, R.raw.directions);
-        number = MediaPlayer.create(this, R.raw.number);
-        alphabet = MediaPlayer.create(this, R.raw.alphabet);
-        basicfinish = MediaPlayer.create(this, R.raw.basicfinish);
-        abbreviation = MediaPlayer.create(this, R.raw.abbreviation_start);
+        tutorial = MediaPlayer.create(this, R.raw.directions); //사용설명서
+        Init = MediaPlayer.create(this, R.raw.initial); //초성연습
+        Vowel = MediaPlayer.create(this, R.raw.vowel); //모음연습
+        Final =MediaPlayer.create(this, R.raw.finalconsonant); //종성연습
+        number = MediaPlayer.create(this, R.raw.number); //숫자연습
+        alphabet = MediaPlayer.create(this, R.raw.alphabet); //알파벳 연습
+        Sentence = MediaPlayer.create(this, R.raw.start_sentence); //문장부호
+        abbreviation = MediaPlayer.create(this, R.raw.abbreviation_start); // 약자 및 약어 연습
+        basicfinish = MediaPlayer.create(this, R.raw.basicfinish); //기초과정 종료
+
+        //반복 제거
         Init.setLooping(false);
         Final.setLooping(false);
         Vowel.setLooping(false);
@@ -47,7 +50,7 @@ public class Menu_service extends Service {
     public int onStartCommand(Intent intent, int flags, int startID){
         if(finish == false) {
             switch (menu_page) {
-                case 1:
+                case 1: //초성 연습
                     if (abbreviation.isPlaying()) {
                         abbreviation.reset();
                         abbreviation = MediaPlayer.create(this, R.raw.abbreviation_start);
@@ -58,7 +61,7 @@ public class Menu_service extends Service {
                     }
                     Init.start();
                     break;
-                case 2:
+                case 2: //모음 연습
                     if (Init.isPlaying()) {
                         Init.reset();
                         Init = MediaPlayer.create(this, R.raw.initial);
@@ -69,7 +72,7 @@ public class Menu_service extends Service {
                     }
                     Vowel.start();
                     break;
-                case 3:
+                case 3: //종성 연습
                     if (Vowel.isPlaying()) {
                         Vowel.reset();
                         Vowel = MediaPlayer.create(this, R.raw.vowel);
@@ -80,7 +83,7 @@ public class Menu_service extends Service {
                     }
                     Final.start();
                     break;
-                case 4:
+                case 4: //숫자 연습
                     if (Final.isPlaying()) {
                         Final.reset();
                         Final = MediaPlayer.create(this, R.raw.finalconsonant);
@@ -91,7 +94,7 @@ public class Menu_service extends Service {
                     }
                     number.start();
                     break;
-                case 5:
+                case 5: //알파벳 연습
                     if (number.isPlaying()) {
                         number.reset();
                         number = MediaPlayer.create(this, R.raw.number);
@@ -102,7 +105,7 @@ public class Menu_service extends Service {
                     }
                     alphabet.start();
                     break;
-                case 6:
+                case 6: //문장부호 연습
                     if (alphabet.isPlaying()) {
                         alphabet.reset();
                         alphabet = MediaPlayer.create(this, R.raw.alphabet);
@@ -113,7 +116,7 @@ public class Menu_service extends Service {
                     }
                     Sentence.start();
                     break;
-                case 7:
+                case 7: //약자 및 약어 연습
                     if (Sentence.isPlaying()) {
                         Sentence.reset();
                         Sentence = MediaPlayer.create(this, R.raw.start_sentence);
@@ -127,7 +130,7 @@ public class Menu_service extends Service {
 
             }
         }
-        else{
+        else{ //기초과정 종료
             basicfinish.start();
             finish=false;
             basicfinish.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {

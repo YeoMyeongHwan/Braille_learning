@@ -7,10 +7,11 @@ import android.os.IBinder;
 
 import com.example.yeo.practice.R;
 
+// 이전화면과 다음화면으로 이동될 때 안내되는 음성을 관리하는 서비스
 
 public class slied extends Service {
     private static final String TAG = "Number";
-    MediaPlayer next,previous;
+    MediaPlayer next,previous; //이전과 다음 음성을 저장하는 변수
     static public int slied = 0;
     public slied() {
     }
@@ -31,10 +32,10 @@ public class slied extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startID){
-        if(slied == 1) {
+        if(slied == 1) { //다음
             next.start();
         }
-        else if(slied==2) {
+        else if(slied==2) { //이전
             previous.start();
         }
         return super.onStartCommand(intent, flags, startID);

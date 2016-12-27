@@ -17,6 +17,10 @@ import com.example.yeo.practice.tutorial.Tutorial_quiz;
 import com.example.yeo.practice.tutorial.Tutorial_service;
 import com.example.yeo.practice.tutorial.Tutorial_tutorial;
 
+/*
+Braile_learning Application이 시작되면 가장먼저 실행되는 Main 클래스
+
+ */
 public class MainActivity extends FragmentActivity {
     static public float width,height;
     final static int CODE = 1;
@@ -35,7 +39,8 @@ public class MainActivity extends FragmentActivity {
         // WidthHeight WH = new WidthHeight(width,height);
         SharedPreferences sf= getSharedPreferences("save", 0);
         int i = sf.getInt("b", 0);
-        switch(i){
+
+        switch(i){ //Database 에 저장된 값을 읽어들여, 시작지점을 결정함
             case 0:
                 Intent i0 = new Intent(MainActivity.this, Menu_Tutorial.class);
                 //Intent i0 = new Intent(MainActivity.this, Tutorial.class);

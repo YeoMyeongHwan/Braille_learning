@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yeo.practice"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="24" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.yeo.practice.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.example.yeo.practice.basic_practice.Final_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.basic_practice.Initial_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.yeo.practice.menu.Menu_alphabet" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_Final_consonant" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_Initial_Consonant" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_number" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_Sentence_marks" />
+
+        <service
+            android:name="com.example.yeo.practice.menu.Menu_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.yeo.practice.menu.Menu_Tutorial" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_Vowel" />
+
+        <service
+            android:name="com.example.yeo.practice.basic_practice.Num_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.sound.Number"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.basic_practice.Sentence_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.sound.slied"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.basic_practice.Vowel_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.yeo.practice.Display_Practice.Braille_short_practice" />
+
+        <service
+            android:name="com.example.yeo.practice.basic_practice.alphabet_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.yeo.practice.menu.Menu_basic_practice" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_master_practice" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_quiz" />
+
+        <service
+            android:name="com.example.yeo.practice.menu.Menu_main_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.basic_practice.abbreviation_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.menu.Menu_detail_contents"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.yeo.practice.menu.Menu_abbreviation" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_letter" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_word" />
+        <activity android:name="com.example.yeo.practice.Display_Practice.Braille_long_practice" />
+
+        <service
+            android:name="com.example.yeo.practice.master_practice.Letter_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.master_practice.Word_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.menu.Menu_master_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.yeo.practice.menu.Menu_quiz_initial" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_quiz_vowel" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_quiz_final" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_quiz_number" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_quiz_alphabet" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_quiz_sentence" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_quiz_abbreviation" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_quiz_letter" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_quiz_word" />
+        <activity android:name="com.example.yeo.practice.Display_Practice.Quiz_Braille_short_practice" />
+        <activity android:name="com.example.yeo.practice.Display_Practice.Quiz_Braille_long_practice" />
+
+        <service
+            android:name="com.example.yeo.practice.quiz.quiz_initial_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.quiz.quiz_vowel_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.quiz.quiz_final_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.quiz.quiz_number_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.quiz.quiz_alphabet_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.menu.quiz_menu_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.quiz.quiz_sentence_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.quiz.quiz_abbreviation_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial" />
+
+        <service
+            android:name="com.example.yeo.practice.tutorial.Tutorial_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial_tutorial" />
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial_basic_practice" />
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial_master_practice" />
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial_quiz" />
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial_basic_init" />
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial_basic_vowel" />
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial_basic_final" />
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial_basic_number" />
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial_basic_english" />
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial_basic_sentence" />
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial_basic_abbreviation" />
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial_dot_practice" />
+        <activity android:name="com.example.yeo.practice.tutorial.Tutorial_dot_lecture" />
+
+        <service
+            android:name="com.example.yeo.practice.quiz.quiz_service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.example.yeo.practice.quiz.score_service"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.yeo.practice.quiz.quiz_manual" />
+        <activity android:name="com.example.yeo.practice.quiz.quiz_score" />
+    </application>
+
+</manifest>
