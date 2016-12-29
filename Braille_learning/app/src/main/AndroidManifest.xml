@@ -2,10 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.yeo.practice">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-
 
     <application
         android:allowBackup="true"
@@ -117,7 +116,6 @@
         <activity android:name=".menu.Menu_quiz_letter" />
         <activity android:name=".menu.Menu_quiz_word" />
         <activity android:name=".Display_Practice.Quiz_Braille_short_practice" />
-
         <activity android:name=".Display_Practice.Quiz_Braille_long_practice" />
 
         <service
@@ -153,7 +151,6 @@
             android:enabled="true"
             android:exported="true" />
 
-
         <activity android:name=".tutorial.Tutorial" />
 
         <service
@@ -186,7 +183,9 @@
 
         <activity android:name=".quiz.quiz_manual" />
         <activity android:name=".quiz.quiz_score" />
-
+        <activity android:name=".menu.Menu_Mynote" />
+        <activity android:name=".menu.Menu_Mynote_basic" />
+        <activity android:name=".menu.Menu_Mynote_master"></activity>
     </application>
 
 </manifest>

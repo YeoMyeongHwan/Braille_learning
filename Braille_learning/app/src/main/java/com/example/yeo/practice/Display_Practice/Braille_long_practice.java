@@ -8,10 +8,16 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
+import com.example.yeo.practice.Braille_data.dot_letter;
 import com.example.yeo.practice.Braille_data.dot_word;
+import com.example.yeo.practice.MainActivity;
 import com.example.yeo.practice.Menu_info;
+import com.example.yeo.practice.MyNote.DB_manager;
 import com.example.yeo.practice.WHclass;
+import com.example.yeo.practice.basic_practice.Initial_service;
+import com.example.yeo.practice.master_practice.Letter_service;
 import com.example.yeo.practice.master_practice.Word_service;
 import com.example.yeo.practice.sound.Number;
 import com.example.yeo.practice.sound.slied;
@@ -22,6 +28,11 @@ public class Braille_long_practice extends FragmentActivity {
     int y1drag, y2drag; // 손가락 1개를 터치하였을 때  y좌표와 손가락 2개를 터치하였을 때 y좌표를 저장하는 변수
     int result1 = 0,result2=0, result3=0, result4=0, result5=0, result6=0; // 화면을 문지르며 학습을 하기 위한 컨트롤 변수
     boolean click = true;
+
+    public static dot_letter Dot_letter;
+    public static dot_word Dot_word;
+
+    String result=""; // 나만의단어장의 결과내용을 받아오는 변수
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,11 +49,31 @@ public class Braille_long_practice extends FragmentActivity {
 
         decorView.setSystemUiVisibility( uiOption );
 
-        dot_word dot = new dot_word(); // 단어 단위의 점자 클래스 선언
+
+        switch(WHclass.sel){
+            case 8: //글자연습
+                Dot_letter = new dot_letter();
+                break;
+            case 9: //단어연습
+                Dot_word = new dot_word(); // 단어 단위의 점자 클래스 선언
+                break;
+        }
+
         m = new Braille_long_display(this);
         m.setBackgroundColor(Color.rgb(22,26,44));
-        startService(new Intent(this, Word_service.class));
         setContentView(m);
+
+        switch(WHclass.sel){
+            case 8: //글자연습
+                startService(new Intent(this, Letter_service.class));
+                break;
+            case 9: //단어연습
+                startService(new Intent(this, Word_service.class));
+                break;
+        }
+
+
+
     }
 
 
@@ -1886,25 +1917,58 @@ public class Braille_long_practice extends FragmentActivity {
             case MotionEvent.ACTION_POINTER_UP:  // 두번째 손가락을 화면에서 떼었을 경우
                 newdrag = (int)event.getX(); // 두번째 손가락이 화면에서 떨어진 지점의 x 좌표 저장
                 y2drag = (int) event.getY();// 두번째 손가락이 화면에서 떨어진 지점의 y 좌표 저장
+
                 if (olddrag - newdrag > WHclass.Drag_space) { // 다음 화면의 점자 학습 진행
                     slied.slied = Menu_info.next;
                     startService(new Intent(this, slied.class));
+                    switch(WHclass.sel){
+                        case 8: //글자연습
+                            startService(new Intent(this, Letter_service.class));
+                            break;
+                        case 9: //단어 연습
+                            startService(new Intent(this, Word_service.class));
+                            break;
+                    }
                     m.MyView3_init();
                     m.invalidate();
-                    startService(new Intent(this, Word_service.class));
-                } else if (newdrag - olddrag > WHclass.Drag_space) { // 이전 화면의 점자 학습 진행
+                }
+                else if (newdrag - olddrag > WHclass.Drag_space) { // 이전 화면의 점자 학습 진행
                     slied.slied = Menu_info.pre;
                     startService(new Intent(this, slied.class));
+                    switch(WHclass.sel){
+                        case 8: //글자연습
+                            startService(new Intent(this, Letter_service.class));
+                            break;
+                        case 9: //단어연습
+                            startService(new Intent(this, Word_service.class));
+                            break;
+                                            }
                     m.MyView3_init();
                     m.invalidate();
-                    startService(new Intent(this, Word_service.class));
-                } else if (y2drag - y1drag > WHclass.Drag_space) { // 현재 화면 점자 정보 다시 듣기
-                    startService(new Intent(this, Word_service.class));
-                }else if (y1drag - y2drag > WHclass.Drag_space) { // 현재 점자 학습 종료
-                    m.MyView3_init();
-                    Word_service.finish = true;
-                    startService(new Intent(this, Word_service.class));
+                }
+                else if (y2drag - y1drag > WHclass.Drag_space) { // 현재 화면 점자 정보 다시 듣기
+                    switch(WHclass.sel){
+                        case 8: //글자연습
+                            startService(new Intent(this, Letter_service.class));
+                            break;
+                        case 9: //단어연습
+                            startService(new Intent(this, Word_service.class));
+                            break;
+                        }
+                }
+                else if (y1drag - y2drag > WHclass.Drag_space) { // 현재 점자 학습 종료
                     m.page = 0;
+                    m.MyView3_init();
+                    switch(WHclass.sel){
+                        case 8: //글자연습
+                            Letter_service.finish = true;
+                            startService(new Intent(this, Letter_service.class));
+                            break;
+                        case 9: //단어연습
+                            Word_service.finish = true;
+                            startService(new Intent(this, Word_service.class));
+                            break;
+                    }
                     finish();
                 }
                 break;
@@ -1927,25 +1991,25 @@ public class Braille_long_practice extends FragmentActivity {
         result6=0;
 
         switch(coordinate){
-            case 1:
+            case 1: //1번점자
                 result1=1;
                 break;
-            case 2:
+            case 2: //2번점자
                 result2=1;
                 break;
-            case 3:
+            case 3: //3번점자
                 result3=1;
                 break;
-            case 4:
+            case 4: //4번점자
                 result4=1;
                 break;
-            case 5:
+            case 5: //5번점자
                 result5=1;
                 break;
-            case 6:
+            case 6: //6번점자
                 result6=1;
                 break;
-            default:
+            default: //그외
                 break;
 
         }
@@ -1954,9 +2018,16 @@ public class Braille_long_practice extends FragmentActivity {
     @Override
     public void onBackPressed() { // 뒤로가기 키를 눌렀을때 점자 학습을 위한 변수 초기화 및 종료
         m.page = 0;
-        Word_service.finish = true;
-        startService(new Intent(this, Word_service.class));
         m.MyView3_init();
+        switch(WHclass.sel){
+            case 8:
+                Letter_service.finish = true;
+                startService(new Intent(this, Letter_service.class));
+            case 9: //단어연습
+                Word_service.finish = true;
+                startService(new Intent(this, Word_service.class));
+                break;
+        }
         finish();
     }
 }

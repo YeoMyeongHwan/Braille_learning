@@ -14,6 +14,7 @@ import com.example.yeo.practice.Menu_info;
 import com.example.yeo.practice.R;
 import com.example.yeo.practice.Display_Practice.Braille_long_practice;
 import com.example.yeo.practice.WHclass;
+import com.example.yeo.practice.master_practice.Word_service;
 import com.example.yeo.practice.sound.slied;
 
 // 글자 연습  메뉴 화면
@@ -56,10 +57,9 @@ public class Menu_word extends FragmentActivity {
                 posy2 = (int)event.getY(); //손가락 1개를 화면에서 떨어트린 y좌표값 저장
                 if(enter == true) {  //손가락 1개를 떨어트린 x,y좌표 지점에 다시 클릭이 이루어진다면 글자 연습으로 접속
                     if (posx2 < posx1 + WHclass.Touch_space && posx2 > posx1 - WHclass.Touch_space && posy1 < posy2 + WHclass.Touch_space && posy2 > posy2 - WHclass.Touch_space) {
+                        WHclass.sel = Menu_info.MENU_WORD;
                         Intent intent = new Intent(Menu_word.this, Braille_long_practice.class);
-                        startActivityForResult(intent, Menu_info.MENU_MASTER_WORD);
-                        Menu_master_service.menu_page=Menu_info.MENU_MASTER_WORD;
-                        startService(new Intent(this, Menu_master_service.class));
+                        startActivityForResult(intent, Menu_info.MENU_WORD);
                     }
                 }
                 else    enter = true;

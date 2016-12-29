@@ -85,6 +85,8 @@ public class Menu_main_service extends Service {
                 }
                 quiz.start();
                 break;
+            case 5:
+                break;
         }
         return START_NOT_STICKY;
 

@@ -6,9 +6,11 @@ import android.support.v7.app.ActionBarActivity;
  * Created by Yeo on 2016-08-02.
  */
 public class WHclass extends ActionBarActivity {
+
     /*
     모든 클래스에서 사용되는 변수들을 관리하는 클래스
      */
+
     static public float width; //스마트폰의 가로 해상도를 저장하는 변수
     static public float height; //스마트폰의 세로 해상도를 저장하는 변수
     static public int sel; //자신이 학습하려는 학습 종류를 저장하는 변수
@@ -29,5 +31,4 @@ public class WHclass extends ActionBarActivity {
     static public float Drag_space = MainActivity.width * (float) 0.2; //드래그 영역을 저장하는 메크로
     static public int Strong_vibe = 250; //강한 진동의 세기를 저장하는 메크로
     static public int Weak_vibe = 50; //약한 진동의 세기를 저장하는 메크로
-
 }

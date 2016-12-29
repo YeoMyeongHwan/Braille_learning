@@ -189,6 +189,9 @@
 
         <activity android:name="com.example.yeo.practice.quiz.quiz_manual" />
         <activity android:name="com.example.yeo.practice.quiz.quiz_score" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_Mynote" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_Mynote_basic" />
+        <activity android:name="com.example.yeo.practice.menu.Menu_Mynote_master" />
     </application>
 
 </manifest>

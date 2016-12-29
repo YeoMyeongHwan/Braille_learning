@@ -58,9 +58,9 @@ public class Menu_Sentence_marks extends FragmentActivity {
                 if(enter == true) {   //손가락 1개를 떨어트린 x,y좌표 지점에 다시 클릭이 이루어진다면 문장부호 연습으로 접속
                     if (posx2 < posx1 + WHclass.Touch_space && posx2 > posx1 - WHclass.Touch_space && posy1 < posy2 + WHclass.Touch_space && posy2 > posy2 - WHclass.Touch_space) {
                         WHclass.sel=Menu_info.MENU_SENTENS;
+                        Menu_info.MENU_INFO = Menu_info.MENU_SENTENS;
                         Intent intent = new Intent(Menu_Sentence_marks.this, Braille_short_practice.class);
                         startActivityForResult(intent, Menu_info.MENU_SENTENS);
-                        startService(new Intent(this, Sentence_service.class));
                     }
                 }
                 else    enter = true;

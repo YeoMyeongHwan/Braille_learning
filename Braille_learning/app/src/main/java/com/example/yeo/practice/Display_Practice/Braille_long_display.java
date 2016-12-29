@@ -9,6 +9,7 @@ import android.os.Vibrator;
 import android.view.View;
 
 import com.example.yeo.practice.Braille_data.dot_word;
+import com.example.yeo.practice.MainActivity;
 import com.example.yeo.practice.WHclass;
 
 import java.util.Random;
@@ -28,6 +29,9 @@ public class Braille_long_display extends View {
     public float height= WHclass.height; //세로
     public int x=0, y=0; // 점자를 터치할때 사용할 좌표를 저장할 변수
     public Vibrator vibrator; //진동 변수
+
+
+
 
 
 
@@ -59,6 +63,11 @@ public class Braille_long_display extends View {
 
     static public int page=0; // 현재 점자 학습 page를 저장하는 변수
 
+    public static String dot_temp1, dot_temp2, dot_temp3; //나만의 단어장을 위해 행렬을 저장하는 변수
+
+    int k=0;
+
+
     public void MyView3_init(){ //화면 초기화 함수. 화면이 이동될 때 점자를 다시 그려줌.
 
         for(int i=0 ; i<3; i++){ // 돌출점자와 비돌출점자의 x,y값을 저장하는 배열변수를 초기화함
@@ -70,74 +79,83 @@ public class Braille_long_display extends View {
             }
         }
 
+        random = new Random();
+        switch(WHclass.sel){
+            case 8:
+                max = Braille_long_practice.Dot_letter.lettercount;
+                page = random.nextInt(max) + min;
+                dot_count = Braille_long_practice.Dot_letter.letter_dot_count.get(page);
+                textname_7 = Braille_long_practice.Dot_letter.letter_name.get(page);
+                break;
+            case 9:
+                max = Braille_long_practice.Dot_word.wordcount;
+                page = random.nextInt(max) + min;
+                dot_count = Braille_long_practice.Dot_word.word_dot_count.get(page);
+                textname_7 = Braille_long_practice.Dot_word.word_name.get(page);
+                break;
+        }
 
-        page = random.nextInt(max) + min;
-        dot_count = dot_word.letter_dot_count.get(page);
+        if(dot_count==1) k=2;
+        else if(dot_count==2) k=4;
+        else if(dot_count==3) k=6;
+        else if(dot_count==4) k=8;
+        else if(dot_count==5) k=10;
+        else if(dot_count==6) k=12;
+        else if(dot_count==7) k=14;
 
-        if(dot_count==1) { //점자가 6개일때, 즉 1칸 일때,
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 2; j++) {
-                    text_7[i][j] = dot_word.letter_Array.get(page)[i][j];
-                    textname_7 = dot_word.letter_name.get(page);
-                }
+        for(int i=0 ; i<3 ; i++){
+            for(int j=0; j<k ; j++){
+                if(WHclass.sel==8) text_7[i][j]=Braille_long_practice.Dot_letter.letter_Array.get(page)[i][j];
+                else if(WHclass.sel==9) text_7[i][j]=Braille_long_practice.Dot_word.word_Array.get(page)[i][j];
             }
         }
-        else if(dot_count==2) { //점자가 12개일때, 즉 2칸일 때
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 4; j++) {
-                    text_7[i][j] = dot_word.letter_Array.get(page)[i][j];
-                    textname_7 = dot_word.letter_name.get(page);
-                }
+
+/*
+        if(WHclass.sel==10){ //나만의 단어장으로 들어왔을 때
+
+            dot_count = MainActivity.braille_db.db_manager.getCount(MainActivity.braille_db.db_manager.My_Note_page); //데이터베이스로부터 점자 칸의 갯수를 불러옴
+            dot_temp1=MainActivity.braille_db.db_manager.getMatrix_1(MainActivity.braille_db.db_manager.My_Note_page); //첫번째 행
+            dot_temp2=MainActivity.braille_db.db_manager.getMatrix_2(MainActivity.braille_db.db_manager.My_Note_page); //두번째 행
+            dot_temp3=MainActivity.braille_db.db_manager.getMatrix_3(MainActivity.braille_db.db_manager.My_Note_page); //세번째 행
+            textname_7 = MainActivity.braille_db.db_manager.getName(MainActivity.braille_db.db_manager.My_Note_page); //점자 이름
+
+            switch(dot_count){
+                case 1:
+                    k=2;
+                    break;
+                case 2:
+                    k=4;
+                    break;
+                case 3:
+                    k=6;
+                    break;
+                case 4:
+                    k=8;
+                    break;
+                case 5:
+                    k=10;
+                    break;
+                case 6:
+                    k=12;
+                    break;
+                case 7:
+                    k=14;
+                    break;
+            }
+            for (int j = 0; j < k; j++) {
+                text_7[0][j]=dot_temp1.charAt(j)-'0';
+                text_7[1][j]=dot_temp2.charAt(j)-'0';
+                text_7[2][j]=dot_temp3.charAt(j)-'0';
             }
         }
-        else if(dot_count==3) { //점자가 18개일때, 즉 3칸일 때
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 6; j++) {
-                    text_7[i][j] = dot_word.letter_Array.get(page)[i][j];
-                    textname_7 = dot_word.letter_name.get(page);
-                }
-            }
-        }
-        else if(dot_count==4){ //점자가 24개일 때, 즉 4칸일 때
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 8; j++) {
-                    text_7[i][j] = dot_word.letter_Array.get(page)[i][j];
-                    textname_7 = dot_word.letter_name.get(page);
-                }
-            }
-        }
-        else if(dot_count==5){ //점자가 30개일 때, 즉 5칸일 때
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 10; j++) {
-                    text_7[i][j] = dot_word.letter_Array.get(page)[i][j];
-                    textname_7 = dot_word.letter_name.get(page);
-                }
-            }
-        }
-        else if(dot_count==6){ //점자가 36개일 때, 즉 6칸일 때
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 12; j++) {
-                    text_7[i][j] = dot_word.letter_Array.get(page)[i][j];
-                    textname_7 = dot_word.letter_name.get(page);
-                }
-            }
-        }
-        else if(dot_count==7){ //점자가 42개일 때, 즉 7칸일 때
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 14; j++) {
-                    text_7[i][j] = dot_word.letter_Array.get(page)[i][j];
-                    textname_7 = dot_word.letter_name.get(page);
-                }
-            }
-        }
+        */
+
+
     }
 
     public Braille_long_display(Context context) {
         super(context);
-        max = dot_word.wordcount;
-        random = new Random();
         MyView3_init();
-
         vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
     }
     @Override
@@ -148,6 +166,31 @@ public class Braille_long_display extends View {
         paint.setAntiAlias(true); // 점자의 표면을 부드럽게 그려줌
 
         switch(dot_count) {
+            case 1: //점자의 칸수가 1칸일 경우 글자의 길이에 따라 글자의 출력위치를 조정함
+                if(textname_7.length() <=1)
+                    canvas.drawText(textname_7, height * (float) 0.45, width * (float) 0.3, paint);
+                else if(textname_7.length() <=2)
+                    canvas.drawText(textname_7, height * (float) 0.4, width * (float) 0.3, paint);
+                else if(textname_7.length() <=3)
+                    canvas.drawText(textname_7, height * (float) 0.35, width * (float) 0.3, paint);
+                else if(textname_7.length() <=4)
+                    canvas.drawText(textname_7, height * (float) 0.3, width * (float) 0.3, paint);
+
+                for(int i = 0; i<3 ; i++){
+                    for(int j=0 ; j<2 ; j++){
+                        if(text_7[i][j]==0)
+                            canvas.drawCircle(width_7[i][j],height_7[i][j],minicircle,paint);
+                        else {
+                            canvas.drawCircle(width_7[i][j],height_7[i][j],bigcircle,paint);
+                            target7_width[i][j] = width_7[i][j];
+                            target7_height[i][j] = height_7[i][j];
+                        }
+                        notarget7_width[i][j] = width_7[i][j];
+                        notarget7_height[i][j] = height_7[i][j];
+                    }
+                }
+                break;
+
             case 2: //점자의 칸수가 2칸일 경우 글자의 길이에 따라 글자의 출력위치를 조정함
                 if(textname_7.length() <=1)
                     canvas.drawText(textname_7, height * (float) 0.45, width * (float) 0.3, paint);

@@ -6,8 +6,13 @@ import android.media.MediaPlayer;
 import android.os.IBinder;
 
 import com.example.yeo.practice.Braille_data.dot_initial;
+import com.example.yeo.practice.Display_Practice.Braille_long_practice;
 import com.example.yeo.practice.Display_Practice.Braille_short_display;
+import com.example.yeo.practice.Display_Practice.Braille_short_practice;
+import com.example.yeo.practice.MainActivity;
+import com.example.yeo.practice.Menu_info;
 import com.example.yeo.practice.R;
+import com.example.yeo.practice.WHclass;
 
 
 public class Initial_service extends Service {
@@ -60,16 +65,33 @@ public class Initial_service extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startID){
         if(finish == false) {
-            if(progress == false){
-                progress = true;
-                previous = Braille_short_display.page;
+            if(WHclass.sel== Menu_info.MENU_NOTE){
+                if(Braille_short_practice.pre_reference==true){
+                    init();
+                    Braille_short_practice.pre_reference=false;
+                }
+                else {
+                    if (progress == false) {
+                        progress = true;
+                        previous = MainActivity.braille_db.db_manager.getReference_index(MainActivity.braille_db.db_manager.My_Note_page);
+                    } else if (progress == true) {
+                        init();
+                        previous = MainActivity.braille_db.db_manager.getReference_index(MainActivity.braille_db.db_manager.My_Note_page);
+                    }
+                    Initial[MainActivity.braille_db.db_manager.getReference_index(MainActivity.braille_db.db_manager.My_Note_page)].start();
+                    Braille_short_practice.pre_reference=true;
+                }
             }
-            else if(progress == true){
-               init();
-                previous= Braille_short_display.page;
+            else {
+                if (progress == false) {
+                    progress = true;
+                    previous = Braille_short_display.page;
+                } else if (progress == true) {
+                    init();
+                    previous = Braille_short_display.page;
+                }
+                Initial[Braille_short_display.page].start();
             }
-            Initial[Braille_short_display.page].start();
-
         }
         else {
             init();

@@ -6,6 +6,8 @@ import android.media.MediaPlayer;
 import android.os.IBinder;
 
 import com.example.yeo.practice.Braille_data.dot_letter;
+import com.example.yeo.practice.Display_Practice.Braille_long_display;
+import com.example.yeo.practice.Display_Practice.Braille_long_practice;
 import com.example.yeo.practice.Display_Practice.Braille_short_display;
 import com.example.yeo.practice.R;
 
@@ -64,20 +66,20 @@ public class Letter_service extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startID){
         if(finish == false) {
-            if(setting[Braille_short_display.page]==0){
-                Letter[Braille_short_display.page]=MediaPlayer.create(this,rawid[Braille_short_display.page]);
-                Letter[Braille_short_display.page].setLooping(false);
-                setting[Braille_short_display.page]=1;
+            if(setting[Braille_long_display.page]==0){
+                Letter[Braille_long_display.page]=MediaPlayer.create(this,rawid[Braille_long_display.page]);
+                Letter[Braille_long_display.page].setLooping(false);
+                setting[Braille_long_display.page]=1;
             }
             if(progress == false){
                 progress = true;
-                previous = Braille_short_display.page;
+                previous = Braille_long_display.page;
             }
             else if(progress == true){
                 init();
-                previous= Braille_short_display.page;
+                previous= Braille_long_display.page;
             }
-            Letter[Braille_short_display.page].start();
+            Letter[Braille_long_display.page].start();
 
         }
         else {

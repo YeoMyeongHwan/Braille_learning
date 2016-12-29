@@ -5,8 +5,10 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.os.Handler;
 import android.os.Vibrator;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.yeo.practice.Braille_data.dot_initial;
 import com.example.yeo.practice.Braille_data.dot_abbreviation;
@@ -17,9 +19,13 @@ import com.example.yeo.practice.Braille_data.dot_num;
 import com.example.yeo.practice.Braille_data.dot_sentence;
 import com.example.yeo.practice.Braille_data.dot_vowel;
 import com.example.yeo.practice.Braille_data.Tutorial_dot_data;
+import com.example.yeo.practice.MainActivity;
 import com.example.yeo.practice.WHclass;
+import com.example.yeo.practice.*;
 
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * Created by yoonc on 2016-07-25.
@@ -41,13 +47,15 @@ public class Braille_short_display extends View {
     static public int page = 0 ;
 
 
-    public int dot_count=0;
+
+    static public int dot_count=0;
 
     public float width1,width2,width3,width4,width5,width6,width7, width8, width9, width10, width11, width12, height1,height2,height3; // 행렬 각각의 x좌표와 y좌표를 저장하는 변수 선언
     public float minicircle, bigcircle; // 돌출된 점자와 비돌출된 점자를 설정
 
 
 
+    public static String dot_temp1, dot_temp2, dot_temp3;
 
     public static int text_1[][] = new int[3][2]; // 6개 점자 저장 변수
     public static int text_2[][] = new int[3][4]; // 12개 점자 저장 변수
@@ -59,6 +67,9 @@ public class Braille_short_display extends View {
 
 
 
+
+
+
     public void MyView2_init(){
         w1=0;w2=0;w3=0;w4=0;w5=0;w6=0;w7=0;w8=0;w9=0;w10=0;w11=0;w12=0;w13=0;w14=0;w15=0;w16=0;w17=0;w18=0; //버튼 가로위치
         h1=0;h2=0;h3=0;h4=0;h5=0;h6=0;h7=0;h8=0;h9=0;h10=0;h11=0;h12=0;h13=0;h14=0;h15=0;h16=0;h17=0;h18=0; //버튼 세로위치
@@ -66,7 +77,32 @@ public class Braille_short_display extends View {
         th1=0;th2=0;th3=0;th4=0;th5=0;th6=0;th7=0;th8=0;th9=0;th10=0;th11=0;th12=0;th13=0;th14=0;th15=0;th16=0;th17=0;th18=0; // 타겟 세로위치
 
         switch(WHclass.sel){
-            case 1:
+            case 0: //튜토리얼연습
+                dot_count = Tutorial_dot_data.Initial_dot_count.get(page);
+                if (dot_count == 1) { //점자가 6개일떄
+                    for (int i = 0; i < 3; i++) {
+                        for (int j = 0; j < 2; j++) {
+                            text_1[i][j] = Tutorial_dot_data.Initial_Array.get(page)[i][j];
+                            textname_1 = Tutorial_dot_data.Initial_name.get(page);
+                        }
+                    }
+                } else if (dot_count == 2) { //점자가 12개일때
+                    for (int i = 0; i < 3; i++) {
+                        for (int j = 0; j < 4; j++) {
+                            text_2[i][j] = Tutorial_dot_data.Initial_Array.get(page)[i][j];
+                            textname_2 = Tutorial_dot_data.Initial_name.get(page);
+                        }
+                    }
+                } else if (dot_count == 3) { //점자가 18개일때
+                    for (int i = 0; i < 3; i++) {
+                        for (int j = 0; j < 6; j++) {
+                            text_3[i][j] = Tutorial_dot_data.Initial_Array.get(page)[i][j];
+                            textname_3 = Tutorial_dot_data.Initial_name.get(page);
+                        }
+                    }
+                }
+                break;
+            case 1: //초성연습
                 dot_count = Braille_short_practice.Dot_initial.Initial_dot_count.get(page);
                 if (dot_count == 1) { //점자가 6개일떄
                     for (int i = 0; i < 3; i++) {
@@ -91,7 +127,7 @@ public class Braille_short_display extends View {
                     }
                 }
                 break;
-            case 2:
+            case 2: //모음연습
                 dot_count = Braille_short_practice.Dot_vowel.vowel_dot_count.get(page);
                 if (dot_count == 1) { //점자가 6개일떄
                     for (int i = 0; i < 3; i++) {
@@ -116,7 +152,7 @@ public class Braille_short_display extends View {
                     }
                 }
                 break;
-            case 3:
+            case 3: //종성연습
                 dot_count = Braille_short_practice.Dot_final.final_dot_count.get(page);
                 if (dot_count == 1) { //점자가 6개일떄
                     for (int i = 0; i < 3; i++) {
@@ -141,7 +177,7 @@ public class Braille_short_display extends View {
                     }
                 }
                 break;
-            case 4:
+            case 4: //숫자연습
                 dot_count = Braille_short_practice.Dot_number.num_dot_count.get(page);
                 if (dot_count == 1) { //점자가 6개일떄
                     for (int i = 0; i < 3; i++) {
@@ -166,7 +202,7 @@ public class Braille_short_display extends View {
                     }
                 }
                 break;
-            case 5:
+            case 5: //알파벳연습
                 dot_count = Braille_short_practice.Dot_alphabet.alphabet_dot_count.get(page);
                 if (dot_count == 1) { //점자가 6개일떄
                     for (int i = 0; i < 3; i++) {
@@ -191,7 +227,7 @@ public class Braille_short_display extends View {
                     }
                 }
                 break;
-            case 6:
+            case 6: //문장부호연습
                 dot_count = Braille_short_practice.Dot_sentence.sentence_dot_count.get(page);
                 if (dot_count == 1) { //점자가 6개일떄
                     for (int i = 0; i < 3; i++) {
@@ -216,7 +252,7 @@ public class Braille_short_display extends View {
                     }
                 }
                 break;
-            case 7:
+            case 7: //약자 및 약어 연습
                 dot_count = Braille_short_practice.Dot_abbreviation.abbreviation_dot_count.get(page);
                 if (dot_count == 1) { //점자가 6개일떄
                     for (int i = 0; i < 3; i++) {
@@ -241,57 +277,37 @@ public class Braille_short_display extends View {
                     }
                 }
                 break;
-            case 8:
-                max = Braille_short_practice.Dot_letter.lettercount;
-                page = random.nextInt(max) + min;
-                dot_count = dot_letter.letter_dot_count.get(page);
-                if (dot_count == 1) { //점자가 6개일떄
-                    for (int i = 0; i < 3; i++) {
-                        for (int j = 0; j < 2; j++) {
-                                    text_1[i][j] = dot_letter.letter_Array.get(page)[i][j];
-                                    textname_1 = dot_letter.letter_name.get(page);
-                        }
-                    }
-                } else if (dot_count == 2) { //점자가 12개일때
-                    for (int i = 0; i < 3; i++) {
-                        for (int j = 0; j < 4; j++) {
-                                    text_2[i][j] = dot_letter.letter_Array.get(page)[i][j];
-                                    textname_2 = dot_letter.letter_name.get(page);
-                            }
-                    }
-                } else if (dot_count == 3) { //점자가 18개일때
-                    for (int i = 0; i < 3; i++) {
-                        for (int j = 0; j < 6; j++) {
-                                    text_3[i][j] = dot_letter.letter_Array.get(page)[i][j];
-                                    textname_3 = dot_letter.letter_name.get(page);
-                        }
-                    }
+            case 10: // 나만의 단어장 연습
+                dot_count =MainActivity.braille_db.db_manager.getCount(MainActivity.braille_db.db_manager.My_Note_page); //데이터베이스로부터 점자 칸의 갯수를 불러옴
+                dot_temp1=MainActivity.braille_db.db_manager.getMatrix_1(MainActivity.braille_db.db_manager.My_Note_page);
+                dot_temp2=MainActivity.braille_db.db_manager.getMatrix_2(MainActivity.braille_db.db_manager.My_Note_page);
+                dot_temp3=MainActivity.braille_db.db_manager.getMatrix_3(MainActivity.braille_db.db_manager.My_Note_page);
+
+                if (dot_count==1){
+                     for(int j=0 ; j<2 ; j++){
+                         text_1[0][j]=dot_temp1.charAt(j)-'0';
+                         text_1[1][j]=dot_temp2.charAt(j)-'0';
+                         text_1[2][j]=dot_temp3.charAt(j)-'0';
+                     }
+                     textname_1 =  MainActivity.braille_db.db_manager.getName(MainActivity.braille_db.db_manager.My_Note_page);
                 }
-                break;
-            case 9:
-                dot_count = Tutorial_dot_data.Initial_dot_count.get(page);
-                if (dot_count == 1) { //점자가 6개일떄
-                    for (int i = 0; i < 3; i++) {
-                        for (int j = 0; j < 2; j++) {
-                            text_1[i][j] = Tutorial_dot_data.Initial_Array.get(page)[i][j];
-                            textname_1 = Tutorial_dot_data.Initial_name.get(page);
-                        }
-                    }
-                } else if (dot_count == 2) { //점자가 12개일때
-                    for (int i = 0; i < 3; i++) {
-                        for (int j = 0; j < 4; j++) {
-                            text_2[i][j] = Tutorial_dot_data.Initial_Array.get(page)[i][j];
-                            textname_2 = Tutorial_dot_data.Initial_name.get(page);
-                        }
-                    }
-                } else if (dot_count == 3) { //점자가 18개일때
-                    for (int i = 0; i < 3; i++) {
-                        for (int j = 0; j < 6; j++) {
-                            text_3[i][j] = Tutorial_dot_data.Initial_Array.get(page)[i][j];
-                            textname_3 = Tutorial_dot_data.Initial_name.get(page);
-                        }
-                    }
+                else if (dot_count==2){
+                     for(int j=0 ; j<4 ; j++){
+                         text_2[0][j]=dot_temp1.charAt(j)-'0';
+                         text_2[1][j]=dot_temp2.charAt(j)-'0';
+                         text_2[2][j]=dot_temp3.charAt(j)-'0';
+                     }
+                     textname_2 =  MainActivity.braille_db.db_manager.getName(MainActivity.braille_db.db_manager.My_Note_page);
                 }
+                else if (dot_count==3){
+                     for(int j=0 ; j<4 ; j++){
+                         text_3[0][j]=dot_temp1.charAt(j)-'0';
+                         text_3[1][j]=dot_temp2.charAt(j)-'0';
+                         text_3[2][j]=dot_temp3.charAt(j)-'0';
+                     }
+                     textname_3 =  MainActivity.braille_db.db_manager.getName(MainActivity.braille_db.db_manager.My_Note_page);
+                }
+
                 break;
         }
 

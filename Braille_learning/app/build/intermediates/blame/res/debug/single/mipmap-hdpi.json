@@ -1,13 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     }

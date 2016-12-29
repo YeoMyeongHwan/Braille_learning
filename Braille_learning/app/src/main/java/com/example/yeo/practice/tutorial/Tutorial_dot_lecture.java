@@ -54,7 +54,7 @@ public class Tutorial_dot_lecture extends FragmentActivity {
                     if (enter == true) {
                         if (posx2 < posx1 + WHclass.width * (float) 0.1 && posx2 > posx1 - WHclass.width * (float) 0.1 && posy1 < posy2 + WHclass.width * (float) 0.1 && posy2 > posy2 - WHclass.width * (float) 0.1) {
                                 Intent intent = new Intent(this, Tutorial_dot_practice.class);
-                                WHclass.sel = 9;
+                                WHclass.sel = 0;
                                 startActivityForResult(intent, 0);
                                 startService(new Intent(this, Tutorial_service.class));
                                 WHclass.db=6;

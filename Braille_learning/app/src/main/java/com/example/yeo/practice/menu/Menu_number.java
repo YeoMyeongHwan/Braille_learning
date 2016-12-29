@@ -56,10 +56,9 @@ public class Menu_number extends FragmentActivity {
                 if(enter == true) {  //손가락 1개를 떨어트린 x,y좌표 지점에 다시 클릭이 이루어진다면 숫자연습으로 접속
                     if (posx2 < posx1 + WHclass.Touch_space && posx2 > posx1 - WHclass.Touch_space && posy1 < posy2 + WHclass.Touch_space && posy2 > posy2 - WHclass.Touch_space) {
                         WHclass.sel=Menu_info.MENU_NUMBER;
+                        Menu_info.MENU_INFO = Menu_info.MENU_NUMBER;
                         Intent intent = new Intent(Menu_number.this, Braille_short_practice.class);
                         startActivityForResult(intent, Menu_info.MENU_NUMBER);
-                        startService(new Intent(this, Num_service.class));
-
                     }
                 }
                 else    enter = true;

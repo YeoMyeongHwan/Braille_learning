@@ -36,36 +36,36 @@ public class dot_word {
 
     public int dot_counter[] = {7,4,4,4,5,5,7,4,3,3,3,6,5,5,4,7,4,7,5}; // 몇개의 칸으로 구성되어 있는지를 나타내는 점자 배열 변수
     public String name [] ={"화장실","사랑","출구","입구","지하철","한국","컴퓨터","점자","엄마","아빠","서울","오른쪽","왼쪽","방향","좌석","스마트폰","계단","핸드폰","서점"};
-    public static ArrayList<int[][]> letter_Array = new ArrayList<>(); // 점자의 배열정보를 저장하는 연결리스트
-    public static ArrayList<Integer> letter_dot_count = new ArrayList<>();  //점자의 글자를 저장하는 연결리스트
-    public static ArrayList<String> letter_name = new ArrayList<>(); // 몇개의 칸으로 구성되어 있는지를 저장하는 연결리스트
+    public static ArrayList<int[][]> word_Array = new ArrayList<>(); // 점자의 배열정보를 저장하는 연결리스트
+    public static ArrayList<Integer> word_dot_count = new ArrayList<>();  //점자의 글자를 저장하는 연결리스트
+    public static ArrayList<String> word_name = new ArrayList<>(); // 몇개의 칸으로 구성되어 있는지를 저장하는 연결리스트
 
 
     public dot_word(){
-        letter_Array.add(toilet);
-        letter_Array.add(love);
-        letter_Array.add(exit);
-        letter_Array.add(enterance);
-        letter_Array.add(subway);
-        letter_Array.add(korea);
-        letter_Array.add(computer);
-        letter_Array.add(dot);
-        letter_Array.add(mom);
-        letter_Array.add(dad);
-        letter_Array.add(seoul);
-        letter_Array.add(right);
-        letter_Array.add(left);
-        letter_Array.add(direction);
-        letter_Array.add(seat);
-        letter_Array.add(smartphone);
-        letter_Array.add(stair);
-        letter_Array.add(handphone);
-        letter_Array.add(bookstore);
+        word_Array.add(toilet);
+        word_Array.add(love);
+        word_Array.add(exit);
+        word_Array.add(enterance);
+        word_Array.add(subway);
+        word_Array.add(korea);
+        word_Array.add(computer);
+        word_Array.add(dot);
+        word_Array.add(mom);
+        word_Array.add(dad);
+        word_Array.add(seoul);
+        word_Array.add(right);
+        word_Array.add(left);
+        word_Array.add(direction);
+        word_Array.add(seat);
+        word_Array.add(smartphone);
+        word_Array.add(stair);
+        word_Array.add(handphone);
+        word_Array.add(bookstore);
 
 
         for(int i = 0 ; i<wordcount ; i++){
-            letter_name.add(name[i]);
-            letter_dot_count.add(dot_counter[i]);
+            word_name.add(name[i]);
+            word_dot_count.add(dot_counter[i]);
         }
 
 

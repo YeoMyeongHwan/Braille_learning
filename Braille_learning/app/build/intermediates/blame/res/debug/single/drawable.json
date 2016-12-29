@@ -1,67 +1,95 @@
 [
     {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu.jpg",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\menu.jpg"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\first.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\first.JPG"
+    },
+    {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_on_mtrl.xml",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_radio_on_mtrl.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_paste_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_paste_material.xml"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech4.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\speech4.JPG"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech5.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\speech5.JPG"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\number.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\number.JPG"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_colored_material.xml"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vowel.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\vowel.JPG"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speechani.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\speechani.xml"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_ab_back_material.xml"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\letter_quiz.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\letter_quiz.JPG"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_checkbox_unchecked_mtrl.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_checkbox_unchecked_mtrl.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sentence.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\sentence.JPG"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech5.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\speech5.JPG"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\promise.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\promise.JPG"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speechani.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\speechani.xml"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\word_quiz.JPG",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\word_quiz.JPG"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vowel_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\vowel_quiz.JPG"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vowel_quiz.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\vowel_quiz.JPG"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
@@ -72,44 +100,88 @@
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\master_practice.JPG"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_colored_material.xml"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_share_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_share_material.xml"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech3.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\speech3.JPG"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech0.JPG",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\speech0.JPG"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\last.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\last.JPG"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\last.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\last.JPG"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\init_quiz.JPG",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\init_quiz.JPG"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_item_background_holo_light.xml"
-    },
-    {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_cut_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_cut_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\final_quiz.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\final_quiz.JPG"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\final_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\final_quiz.JPG"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\number.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\number.JPG"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech1.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\speech1.JPG"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_lecture.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\dot_lecture.JPG"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\number_quiz.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\number_quiz.JPG"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sentence_quiz.JPG",
@@ -120,6 +192,14 @@
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\promise_quiz.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\promise_quiz.JPG"
+    },
+    {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\oneword.JPG",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\oneword.JPG"
     },
@@ -128,28 +208,44 @@
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech2.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\speech2.JPG"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech2.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\speech2.JPG"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\word.JPG",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\word.JPG"
     },
     {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\quiz.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\quiz.JPG"
+    },
+    {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_paste_material.xml",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_paste_material.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alphabet.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\alphabet.JPG"
-    },
-    {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alpabet_quiz.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\alpabet_quiz.JPG"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\basic_practice.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\basic_practice.JPG"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
@@ -164,238 +260,6 @@
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\alphabet.JPG"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speechani.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\speechani.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech3.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\speech3.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_share_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_share_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech1.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\speech1.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\word.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\word.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_dialog_material_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_cut_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_cut_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\first.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\first.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech4.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\speech4.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\word_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\word_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vowel.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\vowel.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\basic_practice.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\basic_practice.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech5.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\speech5.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_on_mtrl.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_radio_on_mtrl.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_checkbox_unchecked_mtrl.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_checkbox_unchecked_mtrl.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speechani.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\speechani.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech3.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\speech3.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vowel_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\vowel_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech3.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\speech3.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\word_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\word_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sentence.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\sentence.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_cut_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_cut_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\manual.png",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\manual.png"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_clear_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_go_search_api_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\number.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\number.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_checkbox_unchecked_mtrl.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_checkbox_unchecked_mtrl.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_checkbox_checked_mtrl.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_checkbox_checked_mtrl.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\basic_practice.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\basic_practice.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech2.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\speech2.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\oneword.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\oneword.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\basic_practice.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\basic_practice.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alphabet.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\alphabet.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_borderless_material.xml"
     },
@@ -408,252 +272,16 @@
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_radio_off_mtrl.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vowel.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\vowel.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_clear_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_selectall_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_selectall_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_seekbar_track_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\master_practice.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\master_practice.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vowel.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\vowel.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_on_mtrl.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_radio_on_mtrl.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sentence.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\sentence.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\promise.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\promise.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech4.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\speech4.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sentence_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\sentence_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu.jpg",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\menu.jpg"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sentence_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\sentence_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\last.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\last.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\word.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\word.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech0.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\speech0.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alpabet_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\alpabet_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_go_search_api_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\final_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\final_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\first.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\first.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alpabet_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\alpabet_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\last.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\last.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vowel_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\vowel_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tutorial.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\tutorial.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_off_mtrl.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_radio_off_mtrl.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_seekbar_track_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\master_practice.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\master_practice.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_copy_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_copy_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\number_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\number_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\promise.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\promise.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_off_mtrl.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_radio_off_mtrl.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\manual.png",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\manual.png"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\oneword.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\oneword.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\promise_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\promise_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_checkbox_checked_mtrl.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_checkbox_checked_mtrl.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_cut_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_cut_material.xml"
-    },
-    {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_copy_material.xml",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_copy_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech0.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\speech0.JPG"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_checkbox_checked_mtrl.xml",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_checkbox_checked_mtrl.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech4.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\speech4.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
@@ -662,217 +290,5 @@
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tutorial.JPG",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\tutorial.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu.jpg",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\menu.jpg"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_copy_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_copy_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\letter_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\letter_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_lecture.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\dot_lecture.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\menu.jpg",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\menu.jpg"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_paste_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_paste_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\init_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\init_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_clear_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sentence.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\sentence.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\number_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\number_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\number.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\number.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech5.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\speech5.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_selectall_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_selectall_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\letter_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\letter_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_checkbox_unchecked_mtrl.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_checkbox_unchecked_mtrl.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_ab_back_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tutorial.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\tutorial.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\init_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\init_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\final_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\final_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech1.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\speech1.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_share_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_share_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_dialog_material_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_lecture.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\dot_lecture.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\letter_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\letter_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_seekbar_track_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech1.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\speech1.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\first.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\first.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_lecture.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\dot_lecture.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\promise_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\promise_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\speech2.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\speech2.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alpabet_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\alpabet_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\promise.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\promise.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_share_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_menu_share_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ic_go_search_api_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\promise_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\promise_quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_dialog_material_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\src\\main\\res\\drawable\\quiz.JPG"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\number_quiz.JPG",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\dot\\Practice_1013\\app\\src\\main\\res\\drawable\\number_quiz.JPG"
     }
 ]

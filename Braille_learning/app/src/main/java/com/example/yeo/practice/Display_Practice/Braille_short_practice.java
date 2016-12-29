@@ -4,13 +4,17 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Build;
+import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 import com.example.yeo.practice.Braille_data.*;
+import com.example.yeo.practice.MainActivity;
 import com.example.yeo.practice.Menu_info;
+import com.example.yeo.practice.MyNote.DB_manager;
 import com.example.yeo.practice.WHclass;
 import com.example.yeo.practice.basic_practice.Final_service;
 import com.example.yeo.practice.basic_practice.Initial_service;
@@ -23,11 +27,15 @@ import com.example.yeo.practice.master_practice.Letter_service;
 import com.example.yeo.practice.sound.Number;
 import com.example.yeo.practice.sound.slied;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class Braille_short_practice extends FragmentActivity {
 /*
 3칸 이하의 점자 학습을 진행하는 클래스
-
  */
+
+
     Braille_short_display m;
     int newdrag, olddrag; //첫번째 손가락과 두번째 손가락의 x좌표를 저장할 변수
     int y1drag, y2drag; //첫번째 손가락과 두번째 손가락의 y좌표를 저장할 변수
@@ -38,6 +46,7 @@ public class Braille_short_practice extends FragmentActivity {
     /*
     초성 연습, 모음연습, 종성연습, 숫자연습, 알파벳연습, 문장부호연습, 약자 및 약아 연습 클래스 선언
      */
+
     public static dot_initial Dot_initial;
     public static dot_vowel Dot_vowel;
     public static dot_final Dot_final;
@@ -45,9 +54,18 @@ public class Braille_short_practice extends FragmentActivity {
     public static dot_alphabet Dot_alphabet;
     public static dot_sentence Dot_sentence;
     public static dot_abbreviation Dot_abbreviation;
-    public static dot_letter Dot_letter;
+
+    private TimerTask second; //나만의 단어장으로 단어를 이동시키기 위한 타이머
+    private final Handler handler = new Handler();
+    int touch = 0; //나만의 단어장으로 단어를 이동시키기 위해 터치 숫자를 확인하는 변수
 
 
+    String array[] = new String[3]; //데이터베이스에 행렬에 대한 정보를 담기 위해 행렬정보를 담는 배열 변수
+    String result=""; // 나만의단어장의 결과내용을 받아오는 변수
+    public static int reference; //나만의 단어장에 들어온 단어의 주소
+    public static int reference_index; //나만의 단어장에 들어온 단어의 순서
+    int previous_reference=0; //나만의 단어장에서 이전에 출력됬던 음성을 초기화 시키기 위한 변수
+    static public boolean pre_reference = false; //이전에 음성이 출력되었는지를 체크하는 변수
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,9 +84,9 @@ public class Braille_short_practice extends FragmentActivity {
         decorView.setSystemUiVisibility( uiOption );
 
 
-        /*
-        학습하려는 점자에 따라 클래스를 선언함
-         */
+        Timer_Start();
+
+        //학습하려는 점자에 따라 클래스를 선언함
         switch(WHclass.sel) {
             case 1: //초성연습
                 Dot_initial = new dot_initial();
@@ -91,17 +109,86 @@ public class Braille_short_practice extends FragmentActivity {
             case 7: //약자 및 약어연습
                 Dot_abbreviation = new dot_abbreviation();
                 break;
-            case 8: //글자연습
-                Dot_letter = new dot_letter();
-                break;
-            case 9:
-                break;
+
         }
 
         m = new Braille_short_display(this); //화면을 출력하기 위한 클래스 선언
-
         m.setBackgroundColor(Color.rgb(22,26,44));
         setContentView(m);
+
+        switch(WHclass.sel) { //메뉴에 맞는 음성을 출력함
+            case 1: //초성연습
+                startService(new Intent(this, Initial_service.class));
+                break;
+            case 2: //모음연습
+                startService(new Intent(this, Vowel_service.class));
+                break;
+            case 3: //종성연습
+                startService(new Intent(this, Final_service.class));
+                break;
+            case 4: //숫자연습
+                startService(new Intent(this, Num_service.class));
+                break;
+            case 5: // 알파벳 연습
+                startService(new Intent(this, alphabet_service.class));
+                break;
+            case 6: // 문장부호 연습
+                startService(new Intent(this, Sentence_service.class));
+                break;
+            case 7: //약자 및 약어 연습
+                startService(new Intent(this, abbreviation_service.class));
+                break;
+        }
+
+
+
+
+    }
+
+
+    public void Timer_Start(){ //1초의 딜레이 시간을 갖는 함수
+        second = new TimerTask() {
+            @Override
+            public void run() {
+                update();
+            }
+        };
+        Timer timer = new Timer();
+        timer.schedule(second,0,500); //0.5초의 딜레이시간
+
+    }
+
+    public void update(){ //1초동안 화면에 연속으로 2번의 터치가 발생됬을 경우 데이터베이스로 현재 단어정보를 전송함
+        Runnable updater = new Runnable() {
+            @Override
+            public void run() {
+                String result ="";
+
+                if(touch > 1){
+                    switch(m.dot_count){
+                        case 1:
+                            if(WHclass.sel==Menu_info.MENU_NOTE) {}
+                            else {
+                                for (int i = 0; i < 3; i++) {
+                                    array[i] = Integer.toString(m.text_1[i][0]) + Integer.toString(m.text_1[i][1]); // 3개의 배열에 1행 2행 3행을 집어넣음
+                                }
+                                result = MainActivity.braille_db.insert(m.dot_count, m.textname_1, array[0], array[1], array[2], Menu_info.MENU_INFO, m.page);  //데이터베이스에 입력하고, 성공문자를 돌려받음
+                                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show(); //성공했다는 메시지를 출력
+                            }
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                    }
+                    touch=0;
+                }
+                else {
+                    touch=0;
+                }
+            }
+        };
+        handler.post(updater);
     }
 
 
@@ -113,9 +200,12 @@ public class Braille_short_practice extends FragmentActivity {
                 if (click == false) {
                     click = true;
                 }
+                break;
             case MotionEvent.ACTION_DOWN: // 첫번째 손가락을 화면에 터치하였을 경우
                 m.x = (int) event.getX(); // 현재 좌표의 x좌표 값을 저장
                 m.y = (int) event.getY(); // 현재 좌표의 y좌표 값을 저장
+
+                touch++; //나만의 단어장으로 이동하기 위한 카운트 변수. 두번 터치하면 나만의 단어장으로 학습단어가 이동됨
 
                 if ((m.x == 0) && (m.y == 0)) { //좌표 초기값으로 지정된 곳을 터치하면 반응을 없앰
                     break;
@@ -679,72 +769,54 @@ public class Braille_short_practice extends FragmentActivity {
                 newdrag = (int)event.getX(); //두번째 손가락이 화면에서 떨어질 때의 x좌표값을 저장
                 y2drag = (int) event.getY(); //두번째 손가락이 화면에서 떨어질 떄의 y좌표값을 저장
                 if (olddrag - newdrag > WHclass.Drag_space) {//손가락 2개를 이용하여 오른쪽에서 왼쪽으로 드래그 하였을 경우
+                    slied.slied = Menu_info.next;
+                    startService(new Intent(this, slied.class));
                     switch(WHclass.sel) { //학습하려는 점자의 종류에 따라 출력되는 음성을 설정
                         case 1: // 초성연습
                             m.page++;
-                            if(m.page>= dot_initial.Initial_count){
+                            if(m.page>= Dot_initial.Initial_count){
                                 m.page = 0;
-                                m.MyView2_init();
                                 Initial_service.finish = true;
                                 startService(new Intent(this, Initial_service.class));
                                 finish();
                             }
                             else {
-                                slied.slied = Menu_info.next;
-                                startService(new Intent(this, slied.class));
-                                m.MyView2_init();
-                                m.invalidate();
                                 startService(new Intent(this, Initial_service.class));
                             }
                             break;
                         case 2: //모음연습
                             m.page++;
-                            if(m.page>=dot_vowel.vowel_count){
+                            if(m.page>=Dot_vowel.vowel_count){
                                 m.page = 0;
-                                m.MyView2_init();
                                 Vowel_service.finish = true;
                                 startService(new Intent(this, Vowel_service.class));
                                 finish();
                             }
                             else {
-                                slied.slied = Menu_info.next;
-                                startService(new Intent(this, slied.class));
-                                m.MyView2_init();
-                                m.invalidate();
                                 startService(new Intent(this, Vowel_service.class));
                             }
                             break;
                         case 3: //종성연습
                             m.page++;
-                            if(m.page>=dot_final.final_count){
+                            if(m.page>=Dot_final.final_count){
                                 m.page = 0;
-                                m.MyView2_init();
                                 Final_service.finish = true;
                                 startService(new Intent(this, Final_service.class));
                                 finish();
                             }
                             else {
-                                slied.slied = Menu_info.next;
-                                startService(new Intent(this, slied.class));
-                                m.MyView2_init();
-                                m.invalidate();
                                 startService(new Intent(this, Final_service.class));
                             }
                             break;
                         case 4: //숫자연습
                             m.page++;
-                            if(m.page>=dot_num.num_count){
+                            if(m.page>=Dot_number.num_count){
                                 m.page = 0;
-                                m.MyView2_init();
                                 Num_service.finish = true;
                                 startService(new Intent(this, Num_service.class));
                                 finish();
                             }
                             else {
-                                slied.slied = Menu_info.next;
-                                startService(new Intent(this, slied.class));
-                                m.MyView2_init();
-                                m.invalidate();
                                 startService(new Intent(this, Num_service.class));
                             }
                             break;
@@ -752,33 +824,23 @@ public class Braille_short_practice extends FragmentActivity {
                             m.page++;
                             if(m.page>= Dot_alphabet.alphabet_count){
                                 m.page = 0;
-                                m.MyView2_init();
                                 alphabet_service.finish = true;
                                 startService(new Intent(this, alphabet_service.class));
                                 finish();
                             }
                             else {
-                                slied.slied = Menu_info.next;
-                                startService(new Intent(this, slied.class));
-                                m.MyView2_init();
-                                m.invalidate();
                                 startService(new Intent(this, alphabet_service.class));
                             }
                             break;
                         case 6: // 문장부호 연습
                             m.page++;
-                            if(m.page>=dot_sentence.sentence_count){
+                            if(m.page>=Dot_sentence.sentence_count){
                                 m.page = 0;
-                                m.MyView2_init();
                                 Sentence_service.finish = true;
                                 startService(new Intent(this, Sentence_service.class));
                                 finish();
                             }
                             else {
-                                slied.slied = Menu_info.next;
-                                startService(new Intent(this, slied.class));
-                                m.MyView2_init();
-                                m.invalidate();
                                 startService(new Intent(this, Sentence_service.class));
                             }
                             break;
@@ -786,104 +848,177 @@ public class Braille_short_practice extends FragmentActivity {
                             m.page++;
                             if(m.page>=Dot_abbreviation.abbreviation_count){
                                 m.page = 0;
-                                m.MyView2_init();
                                 abbreviation_service.finish = true;
                                 startService(new Intent(this, abbreviation_service.class));
                                 finish();
                             }
                             else {
-                                slied.slied = Menu_info.next;
-                                startService(new Intent(this, slied.class));
-                                m.MyView2_init();
-                                m.invalidate();
                                 startService(new Intent(this, abbreviation_service.class));
                             }
                             break;
-                        case 8: //글자연습
-                            slied.slied = Menu_info.next;
-                            startService(new Intent(this, slied.class));
-                            m.MyView2_init();
-                            m.invalidate();
-                            startService(new Intent(this, Letter_service.class));
-                            break;
-                        case 9:
+                        case 10: //나만의 단어장
+                            if(pre_reference==true) {
+                                previous_reference = MainActivity.braille_db.db_manager.getReference(MainActivity.braille_db.db_manager.My_Note_page);
+                                switch (previous_reference) {
+                                    case 1:
+                                        startService(new Intent(this, Initial_service.class));
+                                        break;
+                                    case 2: //모음연습
+                                        startService(new Intent(this, Vowel_service.class));
+                                        break;
+                                    case 3:
+                                        startService(new Intent(this, Final_service.class));
+                                        break;
+                                    case 4: //숫자연습
+                                        startService(new Intent(this, Num_service.class));
+                                        break;
+                                    case 5: // 알파벳 연습
+                                        startService(new Intent(this, alphabet_service.class));
+                                        break;
+                                    case 6: // 문장부호 연습
+                                        startService(new Intent(this, Sentence_service.class));
+                                        break;
+                                    case 7: //약자 및 약어 연습
+                                        startService(new Intent(this, abbreviation_service.class));
+                                        break;
+                                }
+                            }
+
+                            MainActivity.braille_db.db_manager.My_Note_page++;
+
+                            if(MainActivity.braille_db.db_manager.My_Note_page>=MainActivity.braille_db.db_manager.size_count)
+                                onBackPressed();
+
+
+                            reference=MainActivity.braille_db.db_manager.getReference(MainActivity.braille_db.db_manager.My_Note_page);
+                            reference_index = MainActivity.braille_db.db_manager.getReference_index(MainActivity.braille_db.db_manager.My_Note_page);
+
+                            switch(reference) {  //나만의 단어장 음성출력
+                                case 1: //초성연습
+                                    startService(new Intent(this, Initial_service.class));
+                                    break;
+                                case 2: //모음연습
+                                    startService(new Intent(this, Vowel_service.class));
+                                    break;
+                                case 3: //종성연습
+                                    startService(new Intent(this, Final_service.class));
+                                    break;
+                                case 4: //숫자연습
+                                    startService(new Intent(this, Num_service.class));
+                                     break;
+                                case 5: // 알파벳 연습
+                                    startService(new Intent(this, alphabet_service.class));
+                                    break;
+                                case 6: // 문장부호 연습
+                                    startService(new Intent(this, Sentence_service.class));
+                                    break;
+                                case 7: //약자 및 약어 연습
+                                    startService(new Intent(this, abbreviation_service.class));
+                                    break;
+                            }
                             break;
                     }
-                } else if (newdrag - olddrag > WHclass.Drag_space) { //손가락 2개를 이용하여 왼쪽에서 오른쪽으로 드래그 하였을 경우
+                    m.MyView2_init();
+                    m.invalidate();
+                }
+                else if (newdrag - olddrag > WHclass.Drag_space) { //손가락 2개를 이용하여 왼쪽에서 오른쪽으로 드래그 하였을 경우
+                    slied.slied = Menu_info.pre;
+                    startService(new Intent(this, slied.class));
                     switch(WHclass.sel) {//학습하려는 점자의 종류에 따라 출력되는 음성을 설정
                         case 1: //초성연습
                             if(m.page>0)
                                 m.page--;
-                            slied.slied = Menu_info.pre;
-                            startService(new Intent(this, slied.class));
-                            m.MyView2_init();
-                            m.invalidate();
                             startService(new Intent(this, Initial_service.class));
                             break;
                         case 2: //모음연습
                             if(m.page>0)
                                 m.page--;
-                            slied.slied = Menu_info.pre;
-                            startService(new Intent(this, slied.class));
-                            m.MyView2_init();
-                            m.invalidate();
                             startService(new Intent(this, Vowel_service.class));
                             break;
                         case 3: //종성연습
                             if(m.page>0)
                                 m.page--;
-                            slied.slied = Menu_info.pre;
-                            startService(new Intent(this, slied.class));
-                            m.MyView2_init();
-                            m.invalidate();
                             startService(new Intent(this, Final_service.class));
                             break;
                         case 4: // 숫자연습
                             if(m.page>0)
                                 m.page--;
-                            slied.slied = Menu_info.pre;
-                            startService(new Intent(this, slied.class));
-                            m.MyView2_init();
-                            m.invalidate();
                             startService(new Intent(this, Num_service.class));
                             break;
                         case 5: //알파벳 연습
                             if(m.page>0)
                                 m.page--;
-                            slied.slied = Menu_info.pre;
-                            startService(new Intent(this, slied.class));
-                            m.MyView2_init();
-                            m.invalidate();
                             startService(new Intent(this, alphabet_service.class));
                             break;
                         case 6: //문장부호 연습
                             if(m.page>0)
                                 m.page--;
-                            slied.slied = Menu_info.pre;
-                            startService(new Intent(this, slied.class));
-                            m.MyView2_init();
-                            m.invalidate();
                             startService(new Intent(this, Sentence_service.class));
                             break;
                         case 7: //약자 및 약어 연습
                             if(m.page>0)
                                 m.page--;
-                            slied.slied = Menu_info.pre;
-                            startService(new Intent(this, slied.class));
-                            m.MyView2_init();
-                            m.invalidate();
                             startService(new Intent(this, abbreviation_service.class));
                             break;
-                        case 8: // 글자 연습
-                            slied.slied = Menu_info.pre;
-                            startService(new Intent(this, slied.class));
-                            m.MyView2_init();
-                            m.invalidate();
-                            startService(new Intent(this, Letter_service.class));
-                            break;
-                        case 9:
+                        case 10: //나만의 단어장
+                            if(pre_reference==true) {
+                                previous_reference = MainActivity.braille_db.db_manager.getReference(MainActivity.braille_db.db_manager.My_Note_page);
+                                switch (previous_reference) {
+                                    case 1:
+                                        startService(new Intent(this, Initial_service.class));
+                                        break;
+                                    case 2: //모음연습
+                                        startService(new Intent(this, Vowel_service.class));
+                                        break;
+                                    case 3:
+                                        startService(new Intent(this, Final_service.class));
+                                        break;
+                                    case 4: //숫자연습
+                                        startService(new Intent(this, Num_service.class));
+                                        break;
+                                    case 5: // 알파벳 연습
+                                        startService(new Intent(this, alphabet_service.class));
+                                        break;
+                                    case 6: // 문장부호 연습
+                                        startService(new Intent(this, Sentence_service.class));
+                                        break;
+                                    case 7: //약자 및 약어 연습
+                                        startService(new Intent(this, abbreviation_service.class));
+                                        break;
+                                }
+                            }
+
+                            if(MainActivity.braille_db.db_manager.My_Note_page>0)
+                                MainActivity.braille_db.db_manager.My_Note_page--;
+                            reference=MainActivity.braille_db.db_manager.getReference(MainActivity.braille_db.db_manager.My_Note_page);
+                            reference_index = MainActivity.braille_db.db_manager.getReference_index(MainActivity.braille_db.db_manager.My_Note_page);
+                            switch(reference) {
+                                case 1:
+                                    startService(new Intent(this, Initial_service.class));
+                                    break;
+                                case 2: //모음연습
+                                    startService(new Intent(this, Vowel_service.class));
+                                    break;
+                                case 3: //종성연습
+                                    startService(new Intent(this, Final_service.class));
+                                    break;
+                                case 4: // 숫자연습
+                                    startService(new Intent(this, Num_service.class));
+                                    break;
+                                case 5: //알파벳 연습
+                                    startService(new Intent(this, alphabet_service.class));
+                                    break;
+                                case 6: //문장부호 연습
+                                    startService(new Intent(this, Sentence_service.class));
+                                    break;
+                                case 7: //약자 및 약어 연습
+                                    startService(new Intent(this, abbreviation_service.class));
+                                    break;
+                            }
                             break;
                     }
+                    m.MyView2_init();
+                    m.invalidate();
                 } else if (y2drag - y1drag > WHclass.Drag_space) { //손가락 2개를 이용하여 아래로 드래그 하였을 때 현재 점자정보를 다시 들음
                     switch(WHclass.sel) { //점자의 종류에 따라 출력되는 음성을 설정
                         case 1: //초성연습
@@ -907,10 +1042,30 @@ public class Braille_short_practice extends FragmentActivity {
                         case 7: // 약자 및 약어 연습
                             startService(new Intent(this, abbreviation_service.class));
                             break;
-                        case 8: // 글자 연습
-                            startService(new Intent(this, Letter_service.class));
-                            break;
-                        case 9:
+                        case 10: //나만의 단어장
+                            switch(reference) {
+                                case 1:
+                                    startService(new Intent(this, Initial_service.class));
+                                    break;
+                                case 2: //모음연습
+                                    startService(new Intent(this, Vowel_service.class));
+                                    break;
+                                case 3: //종성연습
+                                    startService(new Intent(this, Final_service.class));
+                                    break;
+                                case 4: //숫자연습
+                                    startService(new Intent(this, Num_service.class));
+                                    break;
+                                case 5: //알파벳 연습
+                                    startService(new Intent(this, alphabet_service.class));
+                                    break;
+                                case 6: // 문장부호 연습
+                                    startService(new Intent(this, Sentence_service.class));
+                                    break;
+                                case 7: // 약자 및 약어 연습
+                                    startService(new Intent(this, abbreviation_service.class));
+                                    break;
+                            }
                             break;
                     }
                 }else if (y1drag - y2drag > WHclass.Drag_space) { //손가락 2개를 이용하여 하단에서 상단으로 드래그하였을 때 점자 정보를 초기화하면서 현재화면을 종료함
@@ -945,17 +1100,44 @@ public class Braille_short_practice extends FragmentActivity {
                             abbreviation_service.finish = true;
                             startService(new Intent(this, abbreviation_service.class));
                             break;
-                        case 8: // 글자연습
-                            Letter_service.finish = true;
-                            startService(new Intent(this, Letter_service.class));
-                            break;
                         case 9:
+                            break;
+                        case 10: //나만의 단어장
+                            MainActivity.braille_db.db_manager.My_Note_page=0;
+
+                            if(pre_reference==true) { //이전에 출력되었던 음성을 종료시킴
+                                previous_reference = MainActivity.braille_db.db_manager.getReference(MainActivity.braille_db.db_manager.My_Note_page);
+                                switch (previous_reference) {
+                                    case 1: //초성연습
+                                        startService(new Intent(this, Initial_service.class));
+                                        break;
+                                    case 2: //모음연습
+                                        startService(new Intent(this, Vowel_service.class));
+                                        break;
+                                    case 3: //종성연습
+                                        startService(new Intent(this, Final_service.class));
+                                        break;
+                                    case 4: //숫자연습
+                                        startService(new Intent(this, Num_service.class));
+                                        break;
+                                    case 5: // 알파벳 연습
+                                        startService(new Intent(this, alphabet_service.class));
+                                        break;
+                                    case 6: // 문장부호 연습
+                                        startService(new Intent(this, Sentence_service.class));
+                                        break;
+                                    case 7: //약자 및 약어 연습
+                                        startService(new Intent(this, abbreviation_service.class));
+                                        break;
+                                }
+                            }
                             break;
                     }
                     finish();
                 }
                 break;
             case MotionEvent.ACTION_POINTER_DOWN: // 두번째 손가락이 화면에 터치된 경우
+                touch=0;
                 click = false; // 손가락 1개로 사용하는 문지르기 기능을 잠금
                 olddrag = (int)event.getX(); // 두번째 손가락이 화면에 터치된 지점의 x좌표 값 저장
                 y1drag = (int) event.getY(); // 두번째 손가락이 화면에 터치된 지점의 y좌표 값 저장
@@ -1030,11 +1212,36 @@ public class Braille_short_practice extends FragmentActivity {
                 abbreviation_service.finish = true;
                 startService(new Intent(this, abbreviation_service.class));
                 break;
-            case 8: //글자 연습
-                Letter_service.finish = true;
-                startService(new Intent(this, Letter_service.class));
+            case 10: //나만의단어장
+                MainActivity.braille_db.db_manager.My_Note_page=0;
+                if(pre_reference==true) { //이전에 출력되었던 음성을 종료시킴
+                    previous_reference = MainActivity.braille_db.db_manager.getReference(MainActivity.braille_db.db_manager.My_Note_page);
+                    switch (previous_reference) {
+                        case 1: //초성연습
+                            startService(new Intent(this, Initial_service.class));
+                            break;
+                        case 2: //모음연습
+                            startService(new Intent(this, Vowel_service.class));
+                            break;
+                        case 3: //종성연습
+                            startService(new Intent(this, Final_service.class));
+                            break;
+                        case 4: //숫자연습
+                            startService(new Intent(this, Num_service.class));
+                            break;
+                        case 5: // 알파벳 연습
+                            startService(new Intent(this, alphabet_service.class));
+                            break;
+                        case 6: // 문장부호 연습
+                            startService(new Intent(this, Sentence_service.class));
+                            break;
+                        case 7: //약자 및 약어 연습
+                            startService(new Intent(this, abbreviation_service.class));
+                            break;
+                    }
+                }
                 break;
-            case 9:
+            default :
                 break;
         }
         finish(); // 화면 종료

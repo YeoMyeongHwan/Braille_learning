@@ -56,10 +56,9 @@ public class Menu_Vowel extends FragmentActivity {
                 if(enter == true) { //손가락 1개를 떨어트린 x,y좌표 지점에 다시 클릭이 이루어진다면 모음 연습으로 접속
                     if (posx2 < posx1 + WHclass.Touch_space && posx2 > posx1 - WHclass.Touch_space && posy1 < posy2 + WHclass.Touch_space && posy2 > posy2 - WHclass.Touch_space) {
                         WHclass.sel=Menu_info.MENU_VOWEL;
+                        Menu_info.MENU_INFO = Menu_info.MENU_VOWEL;
                         Intent intent = new Intent(Menu_Vowel.this, Braille_short_practice.class);
                         startActivityForResult(intent, Menu_info.MENU_VOWEL);
-                        startService(new Intent(this, Vowel_service.class));
-
                     }
                 }
                 else    enter = true;
