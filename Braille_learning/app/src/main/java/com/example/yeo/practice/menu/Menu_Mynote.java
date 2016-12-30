@@ -29,8 +29,7 @@ public class Menu_Mynote extends FragmentActivity {
     int y1drag,y2drag;
     boolean enter = true;
 
-    int i = 0;
-    @Override
+     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
@@ -59,9 +58,6 @@ public class Menu_Mynote extends FragmentActivity {
             case MotionEvent.ACTION_DOWN: //손가락 1개를 화면에 터치하였을 경우
                 posx1 = (int)event.getX(); //현재 좌표의 x좌표값 저장
                 posy1 = (int)event.getY(); //현재 좌표의 y좌표값 저장
-
-                if(i>=MainActivity.braille_db.db_manager.size_count) i=0;
-                i++;
                 break;
             case MotionEvent.ACTION_UP: //손가락 1개를 화면에서 떨어트렸을 경우
                 posx2 = (int)event.getX(); //손가락 1개를 화면에서 떨어트린 x좌표값 저장

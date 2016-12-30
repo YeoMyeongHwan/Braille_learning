@@ -7,18 +7,17 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.yeo.practice.Display_Practice.Braille_long_practice;
-import com.example.yeo.practice.Display_Practice.Braille_short_practice;
 import com.example.yeo.practice.MainActivity;
 import com.example.yeo.practice.Menu_info;
+import com.example.yeo.practice.MyNote.Master_DB_manager;
 import com.example.yeo.practice.R;
 import com.example.yeo.practice.WHclass;
+import com.example.yeo.practice.master_practice.Letter_service;
+import com.example.yeo.practice.master_practice.Word_service;
 import com.example.yeo.practice.sound.slied;
-
-import org.w3c.dom.Text;
 
 //나만의 단어장 메뉴 화면
 
@@ -28,9 +27,10 @@ public class Menu_Mynote_master extends FragmentActivity {
     int posx1,posx2,posy1,posy2;
     int y1drag,y2drag;
     boolean enter = true;
-
-    int i = 0;
-    @Override
+    String result="";
+    public static int reference2; //나만의 단어장에 들어온 단어의 주소
+    public static int reference_index2; //나만의 단어장에 들어온 단어의 순서
+     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
@@ -60,17 +60,31 @@ public class Menu_Mynote_master extends FragmentActivity {
                 posx1 = (int)event.getX(); //현재 좌표의 x좌표값 저장
                 posy1 = (int)event.getY(); //현재 좌표의 y좌표값 저장
 
-                if(i>=MainActivity.braille_db.db_manager.size_count) i=0;
-                i++;
                 break;
             case MotionEvent.ACTION_UP: //손가락 1개를 화면에서 떨어트렸을 경우
                 posx2 = (int)event.getX(); //손가락 1개를 화면에서 떨어트린 x좌표값 저장
                 posy2 = (int)event.getY();  //손가락 1개를 화면에서 떨어트린 y좌표값 저장
                 if(enter == true) {  //손가락 1개를 떨어트린 x,y좌표 지점에 다시 클릭이 이루어진다면 나만의 단어장으로 접속
                     if (posx2 < posx1 + WHclass.Touch_space && posx2 > posx1 - WHclass.Touch_space && posy1 < posy2 + WHclass.Touch_space && posy2 > posy2 - WHclass.Touch_space) {
-                   /*     WHclass.sel =Menu_info.MENU_NOTE ;
+                        WHclass.sel =Menu_info.MENU_NOTE ;
                         Intent intent = new Intent(Menu_Mynote_master.this, Braille_long_practice.class);
-                        startActivityForResult(intent, Menu_info.MENU_NOTE);*/
+                        startActivityForResult(intent, Menu_info.MENU_NOTE);
+
+                        if(Master_DB_manager.MyNote_down==false) {
+                            result= MainActivity.master_braille_db.getResult();
+                            Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
+                            Master_DB_manager.MyNote_down=true;
+                            reference2 = MainActivity.master_braille_db.master_db_manager.getReference(MainActivity.master_braille_db.master_db_manager.My_Note_page);
+                            reference_index2 = MainActivity.master_braille_db.master_db_manager.getReference_index(MainActivity.master_braille_db.master_db_manager.My_Note_page);
+                        }
+                        switch(reference2){
+                            case 8: //글자연습
+                                startService(new Intent(this, Letter_service.class));
+                                break;
+                            case 9: //단어연습
+                                startService(new Intent(this, Word_service.class));
+                                break;
+                        }
                     }
                 }
                 else    enter = true;

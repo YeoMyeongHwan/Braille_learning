@@ -7,7 +7,8 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.Display;
 
-import com.example.yeo.practice.MyNote.Braille_DB;
+import com.example.yeo.practice.MyNote.Basic_Braille_DB;
+import com.example.yeo.practice.MyNote.Master_Braille_DB;
 import com.example.yeo.practice.menu.Menu_Tutorial;
 import com.example.yeo.practice.menu.Menu_main_service;
 import com.example.yeo.practice.tutorial.Tutorial_basic_practice;
@@ -25,7 +26,9 @@ Braile_learning Application이 시작되면 가장먼저 실행되는 Main 클�
 public class MainActivity extends FragmentActivity {
     static public float width,height;
     final static int CODE = 1;
-    static public Braille_DB braille_db; // 나만의 단어장을 위한 데이터베이스
+    static public Basic_Braille_DB basic_braille_db; // 나만의 기초 단어장을 위한 데이터베이스
+    static public Master_Braille_DB master_braille_db; // 나만의 숙련 단어장을 위한 데이터베이스
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +45,9 @@ public class MainActivity extends FragmentActivity {
         SharedPreferences sf= getSharedPreferences("save", 0);
         int i = sf.getInt("b", 0);
 
-        braille_db = new Braille_DB(getApplicationContext(),"BRAILLE.db",null,1); //BRAILLE 라는 이름을 가진 테이블
+        basic_braille_db = new Basic_Braille_DB(getApplicationContext(),"BRAILLE.db",null,1); //BRAILLE 라는 이름을 가진 테이블
+        master_braille_db = new Master_Braille_DB(getApplicationContext(),"BRAILLE2.db",null,1); //BRAILLE 라는 이름을 가진 테이블
+
 
 
         switch(i){ //Database 에 저장된 값을 읽어들여, 시작지점을 결정함

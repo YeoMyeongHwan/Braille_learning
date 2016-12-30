@@ -7,14 +7,12 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.yeo.practice.Display_Practice.Braille_long_practice;
 import com.example.yeo.practice.Display_Practice.Braille_short_practice;
 import com.example.yeo.practice.MainActivity;
 import com.example.yeo.practice.Menu_info;
-import com.example.yeo.practice.MyNote.DB_manager;
+import com.example.yeo.practice.MyNote.Basic_DB_manager;
 import com.example.yeo.practice.R;
 import com.example.yeo.practice.WHclass;
 import com.example.yeo.practice.basic_practice.Final_service;
@@ -25,8 +23,6 @@ import com.example.yeo.practice.basic_practice.Vowel_service;
 import com.example.yeo.practice.basic_practice.abbreviation_service;
 import com.example.yeo.practice.basic_practice.alphabet_service;
 import com.example.yeo.practice.sound.slied;
-
-import org.w3c.dom.Text;
 
 //나만의 단어장 메뉴 화면
 
@@ -82,12 +78,12 @@ public class Menu_Mynote_basic extends FragmentActivity {
                         Intent intent = new Intent(Menu_Mynote_basic.this, Braille_short_practice.class);
                         startActivityForResult(intent, Menu_info.MENU_NOTE);
 
-                        if(DB_manager.MyNote_down==false) {
-                            result= MainActivity.braille_db.getResult();
+                        if(Basic_DB_manager.MyNote_down==false) {
+                            result= MainActivity.basic_braille_db.getResult();
                             Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
-                            DB_manager.MyNote_down=true;
-                            reference = MainActivity.braille_db.db_manager.getReference(MainActivity.braille_db.db_manager.My_Note_page);
-                            reference_index = MainActivity.braille_db.db_manager.getReference_index(MainActivity.braille_db.db_manager.My_Note_page);
+                            Basic_DB_manager.MyNote_down=true;
+                            reference = MainActivity.basic_braille_db.basic_db_manager.getReference(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
+                            reference_index = MainActivity.basic_braille_db.basic_db_manager.getReference_index(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
                         }
                         switch(reference){
                             case 1: //초성연습

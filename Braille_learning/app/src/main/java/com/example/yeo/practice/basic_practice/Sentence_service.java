@@ -82,12 +82,12 @@ public class Sentence_service extends Service {
                 else {
                     if (progress == false) {
                         progress = true;
-                        previous = MainActivity.braille_db.db_manager.getReference_index(MainActivity.braille_db.db_manager.My_Note_page);
+                        previous = MainActivity.basic_braille_db.basic_db_manager.getReference_index(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
                     } else if (progress == true) {
                         init();
-                        previous = MainActivity.braille_db.db_manager.getReference_index(MainActivity.braille_db.db_manager.My_Note_page);
+                        previous = MainActivity.basic_braille_db.basic_db_manager.getReference_index(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
                     }
-                    sentence[MainActivity.braille_db.db_manager.getReference_index(MainActivity.braille_db.db_manager.My_Note_page)].start();
+                    sentence[MainActivity.basic_braille_db.basic_db_manager.getReference_index(MainActivity.basic_braille_db.basic_db_manager.My_Note_page)].start();
                     Braille_short_practice.pre_reference=true;
                 }
             }

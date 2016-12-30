@@ -63,7 +63,7 @@ public class Braille_long_display extends View {
 
     static public int page=0; // 현재 점자 학습 page를 저장하는 변수
 
-    public static String dot_temp1, dot_temp2, dot_temp3; //나만의 단어장을 위해 행렬을 저장하는 변수
+    public static String dot_temp[] = new String[3]; //나만의 단어장을 위해 행렬을 저장하는 변수
 
     int k=0;
 
@@ -93,65 +93,25 @@ public class Braille_long_display extends View {
                 dot_count = Braille_long_practice.Dot_word.word_dot_count.get(page);
                 textname_7 = Braille_long_practice.Dot_word.word_name.get(page);
                 break;
+            case 10:
+                dot_count = MainActivity.master_braille_db.master_db_manager.getCount(MainActivity.master_braille_db.master_db_manager.My_Note_page); //데이터베이스로부터 점자 칸의 갯수를 불러옴
+                textname_7 = MainActivity.master_braille_db.master_db_manager.getName(MainActivity.master_braille_db.master_db_manager.My_Note_page); //점자 이름
+                dot_temp[0]=MainActivity.master_braille_db.master_db_manager.getMatrix_1(MainActivity.master_braille_db.master_db_manager.My_Note_page); //첫번째 행
+                dot_temp[1]=MainActivity.master_braille_db.master_db_manager.getMatrix_2(MainActivity.master_braille_db.master_db_manager.My_Note_page); //두번째 행
+                dot_temp[2]=MainActivity.master_braille_db.master_db_manager.getMatrix_3(MainActivity.master_braille_db.master_db_manager.My_Note_page); //세번째 행
+                break;
         }
-
-        if(dot_count==1) k=2;
-        else if(dot_count==2) k=4;
-        else if(dot_count==3) k=6;
-        else if(dot_count==4) k=8;
-        else if(dot_count==5) k=10;
-        else if(dot_count==6) k=12;
-        else if(dot_count==7) k=14;
 
         for(int i=0 ; i<3 ; i++){
-            for(int j=0; j<k ; j++){
+            for(int j=0; j<dot_count*2 ; j++){
                 if(WHclass.sel==8) text_7[i][j]=Braille_long_practice.Dot_letter.letter_Array.get(page)[i][j];
                 else if(WHclass.sel==9) text_7[i][j]=Braille_long_practice.Dot_word.word_Array.get(page)[i][j];
+                else if(WHclass.sel==10) text_7[i][j] = dot_temp[i].charAt(j)-'0';
             }
         }
-
-/*
-        if(WHclass.sel==10){ //나만의 단어장으로 들어왔을 때
-
-            dot_count = MainActivity.braille_db.db_manager.getCount(MainActivity.braille_db.db_manager.My_Note_page); //데이터베이스로부터 점자 칸의 갯수를 불러옴
-            dot_temp1=MainActivity.braille_db.db_manager.getMatrix_1(MainActivity.braille_db.db_manager.My_Note_page); //첫번째 행
-            dot_temp2=MainActivity.braille_db.db_manager.getMatrix_2(MainActivity.braille_db.db_manager.My_Note_page); //두번째 행
-            dot_temp3=MainActivity.braille_db.db_manager.getMatrix_3(MainActivity.braille_db.db_manager.My_Note_page); //세번째 행
-            textname_7 = MainActivity.braille_db.db_manager.getName(MainActivity.braille_db.db_manager.My_Note_page); //점자 이름
-
-            switch(dot_count){
-                case 1:
-                    k=2;
-                    break;
-                case 2:
-                    k=4;
-                    break;
-                case 3:
-                    k=6;
-                    break;
-                case 4:
-                    k=8;
-                    break;
-                case 5:
-                    k=10;
-                    break;
-                case 6:
-                    k=12;
-                    break;
-                case 7:
-                    k=14;
-                    break;
-            }
-            for (int j = 0; j < k; j++) {
-                text_7[0][j]=dot_temp1.charAt(j)-'0';
-                text_7[1][j]=dot_temp2.charAt(j)-'0';
-                text_7[2][j]=dot_temp3.charAt(j)-'0';
-            }
-        }
-        */
-
-
     }
+
+
 
     public Braille_long_display(Context context) {
         super(context);

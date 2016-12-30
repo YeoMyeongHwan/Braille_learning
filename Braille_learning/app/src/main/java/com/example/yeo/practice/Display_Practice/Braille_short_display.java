@@ -278,10 +278,10 @@ public class Braille_short_display extends View {
                 }
                 break;
             case 10: // 나만의 단어장 연습
-                dot_count =MainActivity.braille_db.db_manager.getCount(MainActivity.braille_db.db_manager.My_Note_page); //데이터베이스로부터 점자 칸의 갯수를 불러옴
-                dot_temp1=MainActivity.braille_db.db_manager.getMatrix_1(MainActivity.braille_db.db_manager.My_Note_page);
-                dot_temp2=MainActivity.braille_db.db_manager.getMatrix_2(MainActivity.braille_db.db_manager.My_Note_page);
-                dot_temp3=MainActivity.braille_db.db_manager.getMatrix_3(MainActivity.braille_db.db_manager.My_Note_page);
+                dot_count =MainActivity.basic_braille_db.basic_db_manager.getCount(MainActivity.basic_braille_db.basic_db_manager.My_Note_page); //데이터베이스로부터 점자 칸의 갯수를 불러옴
+                dot_temp1=MainActivity.basic_braille_db.basic_db_manager.getMatrix_1(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
+                dot_temp2=MainActivity.basic_braille_db.basic_db_manager.getMatrix_2(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
+                dot_temp3=MainActivity.basic_braille_db.basic_db_manager.getMatrix_3(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
 
                 if (dot_count==1){
                      for(int j=0 ; j<2 ; j++){
@@ -289,7 +289,7 @@ public class Braille_short_display extends View {
                          text_1[1][j]=dot_temp2.charAt(j)-'0';
                          text_1[2][j]=dot_temp3.charAt(j)-'0';
                      }
-                     textname_1 =  MainActivity.braille_db.db_manager.getName(MainActivity.braille_db.db_manager.My_Note_page);
+                     textname_1 =  MainActivity.basic_braille_db.basic_db_manager.getName(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
                 }
                 else if (dot_count==2){
                      for(int j=0 ; j<4 ; j++){
@@ -297,15 +297,15 @@ public class Braille_short_display extends View {
                          text_2[1][j]=dot_temp2.charAt(j)-'0';
                          text_2[2][j]=dot_temp3.charAt(j)-'0';
                      }
-                     textname_2 =  MainActivity.braille_db.db_manager.getName(MainActivity.braille_db.db_manager.My_Note_page);
+                     textname_2 =  MainActivity.basic_braille_db.basic_db_manager.getName(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
                 }
                 else if (dot_count==3){
-                     for(int j=0 ; j<4 ; j++){
+                     for(int j=0 ; j<6 ; j++){
                          text_3[0][j]=dot_temp1.charAt(j)-'0';
                          text_3[1][j]=dot_temp2.charAt(j)-'0';
                          text_3[2][j]=dot_temp3.charAt(j)-'0';
                      }
-                     textname_3 =  MainActivity.braille_db.db_manager.getName(MainActivity.braille_db.db_manager.My_Note_page);
+                     textname_3 =  MainActivity.basic_braille_db.basic_db_manager.getName(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
                 }
 
                 break;

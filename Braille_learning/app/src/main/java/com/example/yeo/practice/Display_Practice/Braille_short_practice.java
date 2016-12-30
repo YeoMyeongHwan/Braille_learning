@@ -14,7 +14,6 @@ import android.widget.Toast;
 import com.example.yeo.practice.Braille_data.*;
 import com.example.yeo.practice.MainActivity;
 import com.example.yeo.practice.Menu_info;
-import com.example.yeo.practice.MyNote.DB_manager;
 import com.example.yeo.practice.WHclass;
 import com.example.yeo.practice.basic_practice.Final_service;
 import com.example.yeo.practice.basic_practice.Initial_service;
@@ -23,7 +22,6 @@ import com.example.yeo.practice.basic_practice.Sentence_service;
 import com.example.yeo.practice.basic_practice.Vowel_service;
 import com.example.yeo.practice.basic_practice.abbreviation_service;
 import com.example.yeo.practice.basic_practice.alphabet_service;
-import com.example.yeo.practice.master_practice.Letter_service;
 import com.example.yeo.practice.sound.Number;
 import com.example.yeo.practice.sound.slied;
 
@@ -163,22 +161,47 @@ public class Braille_short_practice extends FragmentActivity {
             @Override
             public void run() {
                 String result ="";
+                array[0]="";
+                array[1]="";
+                array[2]="";
 
                 if(touch > 1){
                     switch(m.dot_count){
-                        case 1:
+                        case 1: //한 칸 일때
                             if(WHclass.sel==Menu_info.MENU_NOTE) {}
                             else {
                                 for (int i = 0; i < 3; i++) {
-                                    array[i] = Integer.toString(m.text_1[i][0]) + Integer.toString(m.text_1[i][1]); // 3개의 배열에 1행 2행 3행을 집어넣음
+                                    for(int j=0; j<m.dot_count*2 ; j++){
+                                        array[i] = array[i] + Integer.toString(m.text_1[i][j]); // 3개의 배열에 1행 2행 3행을 집어넣음
+                                    }
                                 }
-                                result = MainActivity.braille_db.insert(m.dot_count, m.textname_1, array[0], array[1], array[2], Menu_info.MENU_INFO, m.page);  //데이터베이스에 입력하고, 성공문자를 돌려받음
+                                result = MainActivity.basic_braille_db.insert(m.dot_count, m.textname_1, array[0], array[1], array[2], Menu_info.MENU_INFO, m.page);  //데이터베이스에 입력하고, 성공문자를 돌려받음
                                 Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show(); //성공했다는 메시지를 출력
                             }
                             break;
-                        case 2:
+                        case 2://두 칸 일때
+                            if(WHclass.sel==Menu_info.MENU_NOTE) {}
+                            else {
+                                for (int i = 0; i < 3; i++) {
+                                    for(int j=0; j<m.dot_count*2 ; j++){
+                                        array[i] = array[i] + Integer.toString(m.text_2[i][j]); // 3개의 배열에 1행 2행 3행을 집어넣음
+                                    }
+                                }
+                                result = MainActivity.basic_braille_db.insert(m.dot_count, m.textname_2, array[0], array[1], array[2], Menu_info.MENU_INFO, m.page);  //데이터베이스에 입력하고, 성공문자를 돌려받음
+                                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show(); //성공했다는 메시지를 출력
+                            }
                             break;
-                        case 3:
+                        case 3://세 칸 일때
+                            if(WHclass.sel==Menu_info.MENU_NOTE) {}
+                            else {
+                                for (int i = 0; i < 3; i++) {
+                                    for(int j=0; j<m.dot_count*2 ; j++){
+                                        array[i] = array[i] + Integer.toString(m.text_3[i][j]); // 3개의 배열에 1행 2행 3행을 집어넣음
+                                    }
+                                }
+                                result = MainActivity.basic_braille_db.insert(m.dot_count, m.textname_3, array[0], array[1], array[2], Menu_info.MENU_INFO, m.page);  //데이터베이스에 입력하고, 성공문자를 돌려받음
+                                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show(); //성공했다는 메시지를 출력
+                            }
                             break;
                     }
                     touch=0;
@@ -205,7 +228,7 @@ public class Braille_short_practice extends FragmentActivity {
                 m.x = (int) event.getX(); // 현재 좌표의 x좌표 값을 저장
                 m.y = (int) event.getY(); // 현재 좌표의 y좌표 값을 저장
 
-                touch++; //나만의 단어장으로 이동하기 위한 카운트 변수. 두번 터치하면 나만의 단어장으로 학습단어가 이동됨
+                if(WHclass.sel!=Menu_info.MENU_NOTE) touch++; //나만의 단어장으로 이동하기 위한 카운트 변수. 두번 터치하면 나만의 단어장으로 학습단어가 이동됨
 
                 if ((m.x == 0) && (m.y == 0)) { //좌표 초기값으로 지정된 곳을 터치하면 반응을 없앰
                     break;
@@ -858,7 +881,7 @@ public class Braille_short_practice extends FragmentActivity {
                             break;
                         case 10: //나만의 단어장
                             if(pre_reference==true) {
-                                previous_reference = MainActivity.braille_db.db_manager.getReference(MainActivity.braille_db.db_manager.My_Note_page);
+                                previous_reference = MainActivity.basic_braille_db.basic_db_manager.getReference(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
                                 switch (previous_reference) {
                                     case 1:
                                         startService(new Intent(this, Initial_service.class));
@@ -884,37 +907,37 @@ public class Braille_short_practice extends FragmentActivity {
                                 }
                             }
 
-                            MainActivity.braille_db.db_manager.My_Note_page++;
+                            MainActivity.basic_braille_db.basic_db_manager.My_Note_page++;
 
-                            if(MainActivity.braille_db.db_manager.My_Note_page>=MainActivity.braille_db.db_manager.size_count)
+                            if(MainActivity.basic_braille_db.basic_db_manager.My_Note_page>=MainActivity.basic_braille_db.basic_db_manager.size_count)
                                 onBackPressed();
+                            else{
+                                reference = MainActivity.basic_braille_db.basic_db_manager.getReference(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
+                                reference_index = MainActivity.basic_braille_db.basic_db_manager.getReference_index(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
 
-
-                            reference=MainActivity.braille_db.db_manager.getReference(MainActivity.braille_db.db_manager.My_Note_page);
-                            reference_index = MainActivity.braille_db.db_manager.getReference_index(MainActivity.braille_db.db_manager.My_Note_page);
-
-                            switch(reference) {  //나만의 단어장 음성출력
-                                case 1: //초성연습
-                                    startService(new Intent(this, Initial_service.class));
-                                    break;
-                                case 2: //모음연습
-                                    startService(new Intent(this, Vowel_service.class));
-                                    break;
-                                case 3: //종성연습
-                                    startService(new Intent(this, Final_service.class));
-                                    break;
-                                case 4: //숫자연습
-                                    startService(new Intent(this, Num_service.class));
-                                     break;
-                                case 5: // 알파벳 연습
-                                    startService(new Intent(this, alphabet_service.class));
-                                    break;
-                                case 6: // 문장부호 연습
-                                    startService(new Intent(this, Sentence_service.class));
-                                    break;
-                                case 7: //약자 및 약어 연습
-                                    startService(new Intent(this, abbreviation_service.class));
-                                    break;
+                                switch (reference) {  //나만의 단어장 음성출력
+                                    case 1: //초성연습
+                                        startService(new Intent(this, Initial_service.class));
+                                        break;
+                                    case 2: //모음연습
+                                        startService(new Intent(this, Vowel_service.class));
+                                        break;
+                                    case 3: //종성연습
+                                        startService(new Intent(this, Final_service.class));
+                                        break;
+                                    case 4: //숫자연습
+                                        startService(new Intent(this, Num_service.class));
+                                        break;
+                                    case 5: // 알파벳 연습
+                                        startService(new Intent(this, alphabet_service.class));
+                                        break;
+                                    case 6: // 문장부호 연습
+                                        startService(new Intent(this, Sentence_service.class));
+                                        break;
+                                    case 7: //약자 및 약어 연습
+                                        startService(new Intent(this, abbreviation_service.class));
+                                        break;
+                                }
                             }
                             break;
                     }
@@ -962,7 +985,7 @@ public class Braille_short_practice extends FragmentActivity {
                             break;
                         case 10: //나만의 단어장
                             if(pre_reference==true) {
-                                previous_reference = MainActivity.braille_db.db_manager.getReference(MainActivity.braille_db.db_manager.My_Note_page);
+                                previous_reference = MainActivity.basic_braille_db.basic_db_manager.getReference(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
                                 switch (previous_reference) {
                                     case 1:
                                         startService(new Intent(this, Initial_service.class));
@@ -988,10 +1011,10 @@ public class Braille_short_practice extends FragmentActivity {
                                 }
                             }
 
-                            if(MainActivity.braille_db.db_manager.My_Note_page>0)
-                                MainActivity.braille_db.db_manager.My_Note_page--;
-                            reference=MainActivity.braille_db.db_manager.getReference(MainActivity.braille_db.db_manager.My_Note_page);
-                            reference_index = MainActivity.braille_db.db_manager.getReference_index(MainActivity.braille_db.db_manager.My_Note_page);
+                            if(MainActivity.basic_braille_db.basic_db_manager.My_Note_page>0)
+                                MainActivity.basic_braille_db.basic_db_manager.My_Note_page--;
+                            reference=MainActivity.basic_braille_db.basic_db_manager.getReference(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
+                            reference_index = MainActivity.basic_braille_db.basic_db_manager.getReference_index(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
                             switch(reference) {
                                 case 1:
                                     startService(new Intent(this, Initial_service.class));
@@ -1103,10 +1126,10 @@ public class Braille_short_practice extends FragmentActivity {
                         case 9:
                             break;
                         case 10: //나만의 단어장
-                            MainActivity.braille_db.db_manager.My_Note_page=0;
+                            MainActivity.basic_braille_db.basic_db_manager.My_Note_page=0;
 
                             if(pre_reference==true) { //이전에 출력되었던 음성을 종료시킴
-                                previous_reference = MainActivity.braille_db.db_manager.getReference(MainActivity.braille_db.db_manager.My_Note_page);
+                                previous_reference = MainActivity.basic_braille_db.basic_db_manager.getReference(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
                                 switch (previous_reference) {
                                     case 1: //초성연습
                                         startService(new Intent(this, Initial_service.class));
@@ -1183,6 +1206,7 @@ public class Braille_short_practice extends FragmentActivity {
     public void onBackPressed() { //뒤로가기 키를 눌렀을 경우, 점자의 종류에따라 음성을 출력하면서 변수들 초기화
         m.page = 0;
         m.MyView2_init();
+
         switch(WHclass.sel) {
             case 1: //초성연습
                 Initial_service.finish = true;
@@ -1213,10 +1237,9 @@ public class Braille_short_practice extends FragmentActivity {
                 startService(new Intent(this, abbreviation_service.class));
                 break;
             case 10: //나만의단어장
-                MainActivity.braille_db.db_manager.My_Note_page=0;
                 if(pre_reference==true) { //이전에 출력되었던 음성을 종료시킴
-                    previous_reference = MainActivity.braille_db.db_manager.getReference(MainActivity.braille_db.db_manager.My_Note_page);
-                    switch (previous_reference) {
+                    reference = MainActivity.basic_braille_db.basic_db_manager.getReference(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
+                    switch (reference) {
                         case 1: //초성연습
                             startService(new Intent(this, Initial_service.class));
                             break;
@@ -1240,6 +1263,7 @@ public class Braille_short_practice extends FragmentActivity {
                             break;
                     }
                 }
+                MainActivity.basic_braille_db.basic_db_manager.My_Note_page=0;
                 break;
             default :
                 break;
