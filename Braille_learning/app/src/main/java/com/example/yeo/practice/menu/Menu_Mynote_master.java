@@ -64,27 +64,30 @@ public class Menu_Mynote_master extends FragmentActivity {
             case MotionEvent.ACTION_UP: //손가락 1개를 화면에서 떨어트렸을 경우
                 posx2 = (int)event.getX(); //손가락 1개를 화면에서 떨어트린 x좌표값 저장
                 posy2 = (int)event.getY();  //손가락 1개를 화면에서 떨어트린 y좌표값 저장
+
                 if(enter == true) {  //손가락 1개를 떨어트린 x,y좌표 지점에 다시 클릭이 이루어진다면 나만의 단어장으로 접속
                     if (posx2 < posx1 + WHclass.Touch_space && posx2 > posx1 - WHclass.Touch_space && posy1 < posy2 + WHclass.Touch_space && posy2 > posy2 - WHclass.Touch_space) {
                         WHclass.sel =Menu_info.MENU_NOTE ;
-                        Intent intent = new Intent(Menu_Mynote_master.this, Braille_long_practice.class);
-                        startActivityForResult(intent, Menu_info.MENU_NOTE);
+                        result= MainActivity.master_braille_db.getResult();
 
-                        if(Master_DB_manager.MyNote_down==false) {
-                            result= MainActivity.master_braille_db.getResult();
+                        if(MainActivity.master_braille_db.master_db_manager.size_count!=0) {
+                            Intent intent = new Intent(Menu_Mynote_master.this, Braille_long_practice.class);
+                            startActivityForResult(intent, Menu_info.MENU_NOTE);
                             Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
                             Master_DB_manager.MyNote_down=true;
                             reference2 = MainActivity.master_braille_db.master_db_manager.getReference(MainActivity.master_braille_db.master_db_manager.My_Note_page);
                             reference_index2 = MainActivity.master_braille_db.master_db_manager.getReference_index(MainActivity.master_braille_db.master_db_manager.My_Note_page);
+                            switch(reference2){
+                                case 8: //글자연습
+                                    startService(new Intent(this, Letter_service.class));
+                                    break;
+                                case 9: //단어연습
+                                    startService(new Intent(this, Word_service.class));
+                                    break;
+                            }
                         }
-                        switch(reference2){
-                            case 8: //글자연습
-                                startService(new Intent(this, Letter_service.class));
-                                break;
-                            case 9: //단어연습
-                                startService(new Intent(this, Word_service.class));
-                                break;
-                        }
+                        else
+                            Toast.makeText(getApplicationContext(),"단어가 들어있지 않아 들어갈 수 없습니다.",Toast.LENGTH_SHORT).show();
                     }
                 }
                 else    enter = true;

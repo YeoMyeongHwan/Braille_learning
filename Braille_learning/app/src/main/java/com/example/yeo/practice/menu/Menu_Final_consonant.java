@@ -40,8 +40,10 @@ public class Menu_Final_consonant extends FragmentActivity {
             uiOption |= View.SYSTEM_UI_FLAG_FULLSCREEN;
         if( Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT )
             uiOption |= View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
-        finish = MediaPlayer.create(Menu_Final_consonant.this, R.raw.basicfinish);
+
         decorView.setSystemUiVisibility( uiOption );
+
+        finish = MediaPlayer.create(Menu_Final_consonant.this, R.raw.basicfinish);
         setContentView(R.layout.activity_menu__final_consonant);
 
     }

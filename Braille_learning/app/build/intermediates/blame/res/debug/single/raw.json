@@ -1956,12 +1956,12 @@
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\raw\\ma.m4a"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\raw\\and.m4a",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\raw\\and.m4a"
-    },
-    {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\raw\\letter_nam.mp3",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\raw\\letter_nam.mp3"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\raw\\and.m4a",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\raw\\and.m4a"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gualhoclose0.m4a",

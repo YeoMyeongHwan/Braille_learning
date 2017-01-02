@@ -75,40 +75,42 @@ public class Menu_Mynote_basic extends FragmentActivity {
                 if(enter == true) {  //손가락 1개를 떨어트린 x,y좌표 지점에 다시 클릭이 이루어진다면 나만의 단어장으로 접속
                     if (posx2 < posx1 + WHclass.Touch_space && posx2 > posx1 - WHclass.Touch_space && posy1 < posy2 + WHclass.Touch_space && posy2 > posy2 - WHclass.Touch_space) {
                         WHclass.sel =Menu_info.MENU_NOTE ;
-                        Intent intent = new Intent(Menu_Mynote_basic.this, Braille_short_practice.class);
-                        startActivityForResult(intent, Menu_info.MENU_NOTE);
 
-                        if(Basic_DB_manager.MyNote_down==false) {
-                            result= MainActivity.basic_braille_db.getResult();
+                        result= MainActivity.basic_braille_db.getResult();
+                        if(MainActivity.basic_braille_db.basic_db_manager.size_count!=0) {
+                            Intent intent = new Intent(Menu_Mynote_basic.this, Braille_short_practice.class);
+                            startActivityForResult(intent, Menu_info.MENU_NOTE);
                             Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
                             Basic_DB_manager.MyNote_down=true;
                             reference = MainActivity.basic_braille_db.basic_db_manager.getReference(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
                             reference_index = MainActivity.basic_braille_db.basic_db_manager.getReference_index(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
-                        }
-                        switch(reference){
-                            case 1: //초성연습
-                                startService(new Intent(this, Initial_service.class));
-                                break;
-                            case 2: //모음연습
-                                startService(new Intent(this, Vowel_service.class));
-                                break;
-                            case 3:
-                                startService(new Intent(this, Final_service.class));
-                                break;
-                            case 4: //숫자연습
-                                startService(new Intent(this, Num_service.class));
-                                break;
-                            case 5: // 알파벳 연습
-                                startService(new Intent(this, alphabet_service.class));
-                                break;
-                            case 6: // 문장부호 연습
-                                startService(new Intent(this, Sentence_service.class));
-                                break;
-                            case 7: //약자 및 약어 연습
-                                startService(new Intent(this, abbreviation_service.class));
-                                break;
-                        }
 
+                            switch(reference){
+                                case 1: //초성연습
+                                    startService(new Intent(this, Initial_service.class));
+                                    break;
+                                case 2: //모음연습
+                                    startService(new Intent(this, Vowel_service.class));
+                                    break;
+                                case 3:
+                                    startService(new Intent(this, Final_service.class));
+                                    break;
+                                case 4: //숫자연습
+                                    startService(new Intent(this, Num_service.class));
+                                    break;
+                                case 5: // 알파벳 연습
+                                    startService(new Intent(this, alphabet_service.class));
+                                    break;
+                                case 6: // 문장부호 연습
+                                    startService(new Intent(this, Sentence_service.class));
+                                    break;
+                                case 7: //약자 및 약어 연습
+                                    startService(new Intent(this, abbreviation_service.class));
+                                    break;
+                            }
+                        }
+                        else
+                            Toast.makeText(getApplicationContext(),"추가된 점자가 없어 메뉴로 들어갈 수가 없습니다.",Toast.LENGTH_SHORT).show();
                     }
                 }
                 else    enter = true;

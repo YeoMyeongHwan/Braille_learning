@@ -44,12 +44,12 @@
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\letter_quiz.JPG",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\letter_quiz.JPG"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_checkbox_unchecked_mtrl.xml",
@@ -172,12 +172,20 @@
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mynote_master.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\mynote_master.JPG"
+    },
+    {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dot_lecture.JPG",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\dot_lecture.JPG"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mynote.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\mynote.JPG"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\number_quiz.JPG",
@@ -282,6 +290,10 @@
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
         "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0-alpha1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mynote_basic.JPG",
+        "source": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\src\\main\\res\\drawable\\mynote_basic.JPG"
     },
     {
         "merged": "C:\\Users\\chanh\\Desktop\\chan\\dot\\code\\git\\Braille_learning\\Braille_learning\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",

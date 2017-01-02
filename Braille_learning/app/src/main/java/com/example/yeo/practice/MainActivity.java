@@ -41,12 +41,14 @@ public class MainActivity extends FragmentActivity {
         height = size.y;  // 스마트폰 세로 해상도
         WHclass.height = height;  //WHclass height에 세로 해상도 저장
         WHclass.width = width;  //WHclass width에 가로 해상도 저장
+        WHclass.Touch_space = width * (float) 0.1; //터치 영역을 저장하는 메크로
+        WHclass.Drag_space = width * (float) 0.2; //드래그 영역을 저장하는 메크로
         // WidthHeight WH = new WidthHeight(width,height);
         SharedPreferences sf= getSharedPreferences("save", 0);
         int i = sf.getInt("b", 0);
 
         basic_braille_db = new Basic_Braille_DB(getApplicationContext(),"BRAILLE.db",null,1); //BRAILLE 라는 이름을 가진 테이블
-        master_braille_db = new Master_Braille_DB(getApplicationContext(),"BRAILLE2.db",null,1); //BRAILLE 라는 이름을 가진 테이블
+        master_braille_db = new Master_Braille_DB(getApplicationContext(),"BRAILLE2.db",null,1); //BRAILLE2 라는 이름을 가진 테이블
 
 
 

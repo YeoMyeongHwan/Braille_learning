@@ -20,6 +20,7 @@ import com.example.yeo.practice.Braille_data.dot_sentence;
 import com.example.yeo.practice.Braille_data.dot_vowel;
 import com.example.yeo.practice.Braille_data.Tutorial_dot_data;
 import com.example.yeo.practice.MainActivity;
+import com.example.yeo.practice.MyNote.Basic_Braille_DB;
 import com.example.yeo.practice.WHclass;
 import com.example.yeo.practice.*;
 
@@ -35,7 +36,6 @@ public class Braille_short_display extends View {
     3칸 이하의 점자를 화면에 출력해주는 클래스
      */
     public Random random;
-    public int max, min=0; // 랜덤변수 최대값과 최소값
     public float width; //가로
     public float height; //세로
     public int x=0, y=0; // 점자를 터치할때 사용할 좌표를 저장할 변수
@@ -282,6 +282,7 @@ public class Braille_short_display extends View {
                 dot_temp1=MainActivity.basic_braille_db.basic_db_manager.getMatrix_1(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
                 dot_temp2=MainActivity.basic_braille_db.basic_db_manager.getMatrix_2(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
                 dot_temp3=MainActivity.basic_braille_db.basic_db_manager.getMatrix_3(MainActivity.basic_braille_db.basic_db_manager.My_Note_page);
+
 
                 if (dot_count==1){
                      for(int j=0 ; j<2 ; j++){

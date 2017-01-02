@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Toast;
 
 import com.example.yeo.practice.MainActivity;
 import com.example.yeo.practice.R;
@@ -52,12 +55,13 @@ public class Menu_basic_practice extends FragmentActivity {
                 posy2 = (int)event.getY();//손가락 1개를 화면에서 떨어트린 y좌표값 저장
                 if(enter == true) {
                     //손가락 1개를 떨어트린 x,y좌표 지점에 다시 클릭이 이루어진다면 기초과정으로 접속
-                    if (posx2 < posx1 + WHclass.Touch_space && posx2 > posx1 - WHclass.Touch_space && posy1 < posy2 + WHclass.Touch_space && posy2 > posy2 - WHclass.Touch_space) {
+               //     if (posx2 < posx1 + WHclass.Touch_space && posx2 > posx1 - WHclass.Touch_space && posy1 < posy2 + WHclass.Touch_space && posy2 > posy2 - WHclass.Touch_space) {
                         Intent intent = new Intent(Menu_basic_practice.this, Menu_Initial_Consonant.class);
                         startActivityForResult(intent, Menu_info.MENU_BASIC_PRACTICE);
                         Menu_service.menu_page=Menu_info.MENU_INITIAL;
                         startService(new Intent(this, Menu_service.class));
-                    }
+                        Toast.makeText(getApplicationContext(),"접속",Toast.LENGTH_SHORT).show();
+                 //   }
                 }
                 else    enter = true;
 
@@ -67,6 +71,7 @@ public class Menu_basic_practice extends FragmentActivity {
             case MotionEvent.ACTION_POINTER_UP:  // 두번째 손가락을 떼었을 경우
                 newdrag = (int)event.getX();// 두번째 손가락이 떨어진 지점의 x좌표값 저장
                 y2drag = (int)event.getY();// 두번째 손가락이 떨어진 지점의 y좌표값 저장
+                Toast.makeText(getApplicationContext(),"3x:4x="+olddrag+":"+newdrag+" 1y:2y:="+y1drag+" "+y2drag+" Drag:"+WHclass.Drag_space+" width,height:"+WHclass.width+" "+WHclass.height,Toast.LENGTH_LONG).show();
                 if(olddrag-newdrag>WHclass.Drag_space) {  //손가락 2개를 이용하여 오른쪽에서 왼쪽으로 드래그할 경우 다음 메뉴로 이동
                     Intent intent = new Intent(this,Menu_master_practice.class);
                     startActivityForResult(intent,Menu_info.MENU_MASTER_PRACTICE);
@@ -88,7 +93,8 @@ public class Menu_basic_practice extends FragmentActivity {
                 else if(y2drag-y1drag> WHclass.Drag_space) {  //손가락 2개를 이용하여 상단에서 하단으로 드래그할 경우 현재 메뉴의 상세정보 음성 출력
                     Menu_detail_contents.menu_page=2;
                     startService(new Intent(this, Menu_detail_contents.class));
-                }else if (y1drag - y2drag > WHclass.Drag_space) {//손가락 2개를 이용하여 하단에서 상단으로 드래그할 경우 현재 메뉴를 종료
+                }
+                else if (y1drag - y2drag > WHclass.Drag_space) {//손가락 2개를 이용하여 하단에서 상단으로 드래그할 경우 현재 메뉴를 종료
                     Menu_main_service.menu_page=Menu_info.MENU_TUTORIAL;
                     finish();
                 }

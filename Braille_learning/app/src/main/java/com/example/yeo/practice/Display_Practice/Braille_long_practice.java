@@ -120,7 +120,18 @@ public class Braille_long_practice extends FragmentActivity {
                 array[2]="";
 
                 if(touch > 1){
-                    if(WHclass.sel==Menu_info.MENU_NOTE) {}
+                    if(WHclass.sel==Menu_info.MENU_NOTE) {
+                        MyNote_Stop_service();
+                        MainActivity.master_braille_db.delete(MainActivity.master_braille_db.master_db_manager.getId(MainActivity.master_braille_db.master_db_manager.My_Note_page));
+                        result = MainActivity.master_braille_db.getResult();
+
+                        if(MainActivity.master_braille_db.master_db_manager.size_count==0)
+                            onBackPressed();
+                        Toast.makeText(getApplicationContext(),result,Toast.LENGTH_SHORT).show();
+                        m.MyView3_init();
+                        m.invalidate();
+                        MyNote_Start_service();
+                    }
                     else {
                         for (int i = 0; i < 3; i++) {
                             for(int j=0; j<m.dot_count*2 ; j++){
@@ -154,7 +165,7 @@ public class Braille_long_practice extends FragmentActivity {
                 m.x = (int) event.getX(); //x좌표를 저장
                 m.y = (int) event.getY(); //y좌표를 저장
 
-                if(WHclass.sel!=Menu_info.MENU_NOTE) touch++; //나만의 단어장으로 이동하기 위한 카운트 변수. 두번 터치하면 나만의 단어장으로 학습단어가 이동됨
+                touch++; //나만의 단어장으로 이동하기 위한 카운트 변수. 두번 터치하면 나만의 단어장으로 학습단어가 이동됨
 
                 if ((m.x <m.bigcircle*2) && (m.x>m.bigcircle*(-2))&&(m.y >m.bigcircle*(-2))&&(m.y <(m.bigcircle*2))) {
                     break;
@@ -1996,35 +2007,12 @@ public class Braille_long_practice extends FragmentActivity {
                             startService(new Intent(this, Word_service.class));
                             break;
                         case 10:
-                            if(pre_reference2==true) {
-                                previous_reference = MainActivity.master_braille_db.master_db_manager.getReference(MainActivity.master_braille_db.master_db_manager.My_Note_page);
-                                switch (previous_reference) {
-                                    case 8: //글자연습
-                                        startService(new Intent(this, Letter_service.class));
-                                        break;
-                                    case 9: //단어연습
-                                        startService(new Intent(this, Word_service.class));
-                                        break;
-                                }
-                            }
-
+                            MyNote_Stop_service();
                             MainActivity.master_braille_db.master_db_manager.My_Note_page++;
-
-                            if(MainActivity.master_braille_db.master_db_manager.My_Note_page>=MainActivity.master_braille_db.master_db_manager.size_count)
-                                onBackPressed();
-                            else {
-                                reference2 = MainActivity.master_braille_db.master_db_manager.getReference(MainActivity.master_braille_db.master_db_manager.My_Note_page);
-                                reference_index2 = MainActivity.master_braille_db.master_db_manager.getReference_index(MainActivity.master_braille_db.master_db_manager.My_Note_page);
-
-                                switch (reference2) {  //나만의 단어장 음성출력
-                                    case 8: //글자연습
-                                        startService(new Intent(this, Letter_service.class));
-                                        break;
-                                    case 9: //단어연습
-                                        startService(new Intent(this, Word_service.class));
-                                        break;
-                                }
-                            }
+                            if(MainActivity.master_braille_db.master_db_manager.My_Note_page>=MainActivity.master_braille_db.master_db_manager.size_count) //가장 마지막 학습내용까지 진행됬다면
+                                onBackPressed(); //종료
+                            else  //아직 학습이 진행중이면
+                                MyNote_Start_service();
                             break;
                     }
                     m.MyView3_init();
@@ -2041,30 +2029,11 @@ public class Braille_long_practice extends FragmentActivity {
                             startService(new Intent(this, Word_service.class));
                             break;
                         case 10:
-                            if(pre_reference2==true) {
-                                previous_reference = MainActivity.master_braille_db.master_db_manager.getReference(MainActivity.master_braille_db.master_db_manager.My_Note_page);
-                                switch (previous_reference) {
-                                    case 8: //글자연습
-                                        startService(new Intent(this, Letter_service.class));
-                                        break;
-                                    case 9: //단어연습
-                                        startService(new Intent(this, Word_service.class));
-                                        break;
-                                }
-                            }
+                            MyNote_Stop_service(); // 이전에 실행되던 음성을 중지하는 함수
 
                             if(MainActivity.master_braille_db.master_db_manager.My_Note_page>0)
                                 MainActivity.master_braille_db.master_db_manager.My_Note_page--;
-                            reference2=MainActivity.master_braille_db.master_db_manager.getReference(MainActivity.master_braille_db.master_db_manager.My_Note_page);
-                            reference_index2 = MainActivity.master_braille_db.master_db_manager.getReference_index(MainActivity.master_braille_db.master_db_manager.My_Note_page);
-                            switch(reference2) {
-                                case 8: //글자 연습
-                                    startService(new Intent(this, Letter_service.class));
-                                    break;
-                                case 9: //단어 연습
-                                    startService(new Intent(this, Word_service.class));
-                                    break;
-                            }
+                            MyNote_Start_service(); //현재 화면의 음성 출력
                             break;
                     }
                     m.MyView3_init();
@@ -2079,14 +2048,7 @@ public class Braille_long_practice extends FragmentActivity {
                             startService(new Intent(this, Word_service.class));
                             break;
                         case 10:
-                            switch(reference2) {  //나만의 단어장 음성출력
-                                case 8: //글자연습
-                                    startService(new Intent(this, Letter_service.class));
-                                    break;
-                                case 9: //단어연습
-                                    startService(new Intent(this, Word_service.class));
-                                    break;
-                            }
+                            MyNote_Start_service();
                             break;
                         }
                 }
@@ -2102,7 +2064,9 @@ public class Braille_long_practice extends FragmentActivity {
                             Word_service.finish = true;
                             startService(new Intent(this, Word_service.class));
                             break;
-                    }
+                        case 10:
+                            onBackPressed();
+                        }
                     finish();
                 }
                 break;
@@ -2117,6 +2081,32 @@ public class Braille_long_practice extends FragmentActivity {
         return true;
     }
 
+    public void MyNote_Stop_service(){
+        if(pre_reference2==true) { //이전에 출력되었던 학습 음성 종료
+            previous_reference = MainActivity.master_braille_db.master_db_manager.getReference(MainActivity.master_braille_db.master_db_manager.My_Note_page);
+            switch (previous_reference) {
+                case 8: //글자연습
+                    startService(new Intent(this, Letter_service.class));
+                    break;
+                case 9: //단어연습
+                    startService(new Intent(this, Word_service.class));
+                    break;
+            }
+        }
+    }
+    public void MyNote_Start_service(){
+        reference2 = MainActivity.master_braille_db.master_db_manager.getReference(MainActivity.master_braille_db.master_db_manager.My_Note_page);
+        reference_index2 = MainActivity.master_braille_db.master_db_manager.getReference_index(MainActivity.master_braille_db.master_db_manager.My_Note_page);
+
+        switch (reference2) {  //나만의 단어장 음성출력
+            case 8: //글자연습
+                startService(new Intent(this, Letter_service.class));
+                break;
+            case 9: //단어연습
+                startService(new Intent(this, Word_service.class));
+                break;
+        }
+    }
     public void touch_init(int coordinate){ //문지르기 기능을 위한 컨트롤 변수 초기화
         result1=0;
         result2=0;
@@ -2164,17 +2154,7 @@ public class Braille_long_practice extends FragmentActivity {
                 startService(new Intent(this, Word_service.class));
                 break;
             case 10:
-                if(pre_reference2==true) { //이전에 출력되었던 음성을 종료시킴
-                    reference2 = MainActivity.master_braille_db.master_db_manager.getReference(MainActivity.master_braille_db.master_db_manager.My_Note_page);
-                    switch (reference2) {
-                        case 8: //글자연습
-                            startService(new Intent(this, Letter_service.class));
-                            break;
-                        case 9: //단어연습
-                            startService(new Intent(this, Word_service.class));
-                            break;
-                    }
-                }
+                MyNote_Stop_service();
                 MainActivity.master_braille_db.master_db_manager.My_Note_page=0;
                 break;
         }

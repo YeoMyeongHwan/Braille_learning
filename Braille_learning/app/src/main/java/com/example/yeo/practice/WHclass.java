@@ -27,8 +27,8 @@ public class WHclass extends ActionBarActivity {
     static public int basicprogressresult = 0;
     static public int db;
 
-    static public float Touch_space = MainActivity.width * (float) 0.1; //터치 영역을 저장하는 메크로
-    static public float Drag_space = MainActivity.width * (float) 0.2; //드래그 영역을 저장하는 메크로
+    static public float Touch_space ; //터치 영역을 저장하는 메크로 = MainActivity.width * (float) 0.1
+    static public float Drag_space ; //드래그 영역을 저장하는 메크로 = MainActivity.width * (float) 0.2
     static public int Strong_vibe = 250; //강한 진동의 세기를 저장하는 메크로
     static public int Weak_vibe = 50; //약한 진동의 세기를 저장하는 메크로
 }
